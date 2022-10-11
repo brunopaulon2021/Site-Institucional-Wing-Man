@@ -15,6 +15,7 @@ header img {
 }
 
 .header {
+    width: 100%;
     background-color: #424243;
     display: flexbox;
 
@@ -131,10 +132,12 @@ nav {
 
 .container-produtos {
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
+    width: 100%;
+    grid-template-columns: 23% 23% 23% 23%;
+    margin: auto;
     grid-template-rows: 1fr;
-    grid-auto-columns: 1fr;
-    gap: 0px 1%;
+    grid-auto-columns: auto;
+    gap: 0px 5px;
     grid-auto-flow: row;
     grid-template-areas:
         "h1produtos h1produtos h1produtos h1produtos"
@@ -298,26 +301,115 @@ nav {
 
 /* BLOG */
 
-.container-blog{
+.blog h1 {
+    font-size: 40px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.container-blog {
+    text-align: center;
     display: grid;
     grid-template-columns: 30% 30% 30%;
     grid-template-rows: 1fr;
     grid-auto-columns: auto;
-    gap: 5px;
+    gap: 1%;
     grid-auto-flow: row;
     grid-template-areas:
         "post1 post2 post3";
-        border: solid;
 }
 
 .post1 {
+    font-size: 20px;
+    background-color: #424243cf;
+    border: 1px solid black;
+    margin: 0 auto;
     grid-area: post1;
 }
 
 .post2 {
+    font-size: 20px;
+    background-color: #424243cf;
+    border: 1px solid black;
     grid-area: post2;
 }
 
 .post3 {
+    font-size: 20px;
+    background-color: #424243cf;
+    border: 1px solid black;
     grid-area: post3;
+}
+
+.post1 img {
+
+    width: 100%;
+    height: 150px;
+}
+
+.post2 img {
+    width: 100%;
+    height: 150px;
+}
+
+.post3 img {
+    width: 100%;
+    height: 150px;
+}
+
+/* Footer categorias */
+footer {
+    margin-top: 60px;
+    background-color: #424243;
+}
+.h1categorias {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left:16%;
+}
+.container-categorias {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: auto;
+    grid-auto-columns: auto;
+    gap: 5px 1%;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas:
+        "categ1 categ2 categ3";
+}
+.container-categorias li {
+    padding: 10px;
+    text-align: justify;
+    word-break: keep-all;    
+    
+    
+}
+.container-categorias a {
+    color: #FFFFFF;
+    text-decoration: none;  
+}
+
+.container-categorias a:hover {
+    color: #FCD900;
+    text-decoration: none;  
+}
+
+
+.categ1 {
+    grid-area: categ1;
+    text-align: left;
+    margin: 0;
+}
+
+.categ2 {
+    grid-area: categ2;
+}
+
+.categ3 {
+    grid-area: categ3;
 }
