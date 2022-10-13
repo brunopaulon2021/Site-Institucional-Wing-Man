@@ -367,6 +367,8 @@ footer {
     padding-top: 30px;
     padding-bottom: 30px;
     margin-left:16%;
+    font-size: 30px;
+    color: #FCD900;
 }
 .container-categorias {
     display: grid;
@@ -413,3 +415,54 @@ footer {
 .categ3 {
     grid-area: categ3;
 }
+
+
+.h1servicosfooter {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    margin-left:16%;
+    font-size: 30px;
+    color: #FCD900;
+}
+.servicosfooter {
+    display: grid;
+    grid-template-columns: 48% 48% ;
+    grid-template-rows: auto;
+    grid-auto-columns: auto;
+    gap: 5px 1%;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas:
+        "svs1 svs2";
+}
+.servicosfooter li {
+    padding: 10px;
+
+    text-align: justify;
+    word-break: keep-all;    
+    
+    
+}
+.servicosfooter a {
+    color: #FFFFFF;
+    text-decoration: none;  
+}
+
+.servicosfooter a:hover {
+    color: #FCD900;
+    text-decoration: none;  
+}
+
+
+.svs1 {
+    grid-area: svs1;
+    text-align: left;
+}
+
+.svs2 {
+    grid-area: svs2;
+}
+
