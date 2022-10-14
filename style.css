@@ -26,9 +26,9 @@ header img {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    max-width: 150px;
+    max-width: 250px;
     margin: 0 auto;
-    padding: 2% 2%;
+    padding: 2% ;
 }
 
 .idiomas a:hover {
@@ -38,15 +38,22 @@ header img {
 .contato {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    max-width: 600px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    width: 100%;
     margin: 0 auto;
-    padding: 2% 2%;
+  
 }
 
 .contato a {
+    text-align: center;
     color: white;
     text-decoration: none;
+    font-size: 1.3rem;  
+    padding: 2%;
 }
 
 .contato a:hover {
@@ -65,13 +72,13 @@ header img {
 
 #midia {
     color: #FCD900;
-    font-size: 30px;
+    font-size: 2rem;
 
 }
 
 #midia:hover {
     color: white;
-    font-size: 30px;
+    font-size: 2rem;
     transform: scale(1.5);
 
 }
@@ -87,6 +94,7 @@ header img {
 
 .menuFixo {
     font-family: Raleway-Regular;
+    font-size: 2rem;
     color: #FCD900;
     display: flex;
     margin: 0 2%;
@@ -100,13 +108,14 @@ nav {
 }
 
 .menuFixo button {
-    width: 30px;
-    height: 30px;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
 }
 
 .menuFixo img {
     background-color: #FCD900;
-    width: 100px;
+    width: 200px;
     border: solid 5px #424243;
 }
 
@@ -118,34 +127,28 @@ nav {
 /* produtos */
 .h1produtos {
     text-align: center;
-    grid-area: h1produtos;
+    font-size: 3rem;
+    padding: 5%;
 }
 
 .h1produtos h1 {
     margin: 5px auto;
-    color: rgb(0, 0, 0);
-    font-size: 40px;
-    padding: 5%;
+    color: #FCD900 ;
     text-align: center;
     justify-content: center;
 }
 
 .container-produtos {
-    display: grid;
+    display: flex;
+    justify-content: center;
     width: 100%;
-    grid-template-columns: 23% 23% 23% 23%;
-    margin: auto;
-    grid-template-rows: 1fr;
-    grid-auto-columns: auto;
-    gap: 0px 5px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "h1produtos h1produtos h1produtos h1produtos"
-        "caldeiras gruas maquinascabos maquinastecidos";
+    margin:  0 auto;
+    gap: 1%;
+   
 }
 
 .caldeiras {
-    grid-area: caldeiras;
+    width: 23%;
     background-color: #424243;
 }
 
@@ -153,11 +156,11 @@ nav {
     text-decoration: none;
     color: white;
     text-align: center;
-    font-size: 12px;
+    font-size: 1.2rem;
 }
 
 .gruas {
-    grid-area: gruas;
+    width: 23%;
     background-color: #424243;
 }
 
@@ -165,11 +168,11 @@ nav {
     text-decoration: none;
     color: white;
     text-align: center;
-    font-size: 12px;
+    font-size: 1.2rem;
 }
 
 .maquinascabos {
-    grid-area: maquinascabos;
+    width: 23%;
     background-color: #424243;
 }
 
@@ -177,11 +180,11 @@ nav {
     text-decoration: none;
     color: white;
     text-align: center;
-    font-size: 12px;
+    font-size: 1.2rem;
 }
 
 .maquinastecidos {
-    grid-area: maquinastecidos;
+    width: 23%;
     background-color: #424243;
 }
 
@@ -189,7 +192,7 @@ nav {
     text-decoration: none;
     color: white;
     text-align: center;
-    font-size: 12px;
+    font-size: 1.2rem;
 
 }
 
@@ -197,112 +200,104 @@ nav {
 
 .container-serviços {
     background-color: #ECECEC;
-    margin-top: 60px;
+    margin-top: 30px;
 }
-
+.servicos {
+    gap: 15px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
 .serviços h1 {
     color: rgb(107, 104, 104);
-    font-size: 40px;
+    font-size: 3rem;
     padding: 5%;
     text-align: center;
 }
 
 .container-serviços {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 1fr;
-    grid-auto-columns: 1fr;
-    gap: 1% 1%;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "serviçosh1 serviçosh1 serviçosh1 serviçosh1"
-        "reformas laudos rotores montagens";
-    height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 1%;
+    height: auto;
     padding-bottom: 90px;
 }
 
-.h1-serviços {
-    grid-area: serviçosh1;
+.serviçoh1 {
     text-decoration: none;
+    font-size: 3rem;    
     color: black;
     text-align: center;
     margin: 30px auto;
 }
-
-.reformas {
-    grid-area: reformas;
+.reformas,
+.laudos,
+.rotores,
+.montagens {
+    width: 25%;
 }
 
 .reformas a {
     text-decoration: none;
     color: black;
     text-align: center;
-    font-size: 12px;
-}
-
-
-.laudos {
-    grid-area: laudos;
+    font-size: 1.2rem;
 }
 
 .laudos a {
     text-decoration: none;
     color: black;
     text-align: center;
-    font-size: 12px;
+    font-size: 1.2rem;
 }
 
-.rotores {
-    grid-area: rotores;
-}
 
 .rotores a {
     text-decoration: none;
     color: black;
     text-align: center;
-    font-size: 12px;
+    font-size: 1.2rem;
 }
 
-.montagens {
-    grid-area: montagens;
-}
 
 .montagens a {
     text-decoration: none;
     color: black;
     text-align: center;
-    font-size: 12px;
+    font-size: 1.2rem;
 }
 
 /* Sobre */
 
 .sobre {
-    padding-left: 20%;
-    padding-top: 50px;
     padding-bottom: 50px;
     background-color: #424243;
     text-align: justify;
 }
 
 .sobre h1 {
+    padding-top: 50px;
+    padding-bottom: 50px;
     border-bottom: 5px solid #FCD900;
-    width: 250px;
-    font-size: 40px;
+    font-size: 3rem;
+    text-align: center;
     color: white;
 }
 
 .sobre p {
+    margin: 0 auto;
+    text-align: justify;
     word-wrap: break-word;
     color: #FFFFFF;
-    padding-top: 10px;
-    font-size: 20px;
-    width: 300px;
+    padding-top: 30px;
+    font-size: 2rem;
+    width: 80%;
 }
 
 /* BLOG */
 
 .blog h1 {
-    font-size: 40px;
+    font-size: 3rem;
     text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -310,36 +305,28 @@ nav {
 
 .container-blog {
     text-align: center;
-    display: grid;
-    grid-template-columns: 30% 30% 30%;
-    grid-template-rows: 1fr;
-    grid-auto-columns: auto;
+    display: flex;
     gap: 1%;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "post1 post2 post3";
+    width: 100%;
 }
 
-.post1 {
-    font-size: 20px;
+.post1,
+.post2,
+.post3
+
+{   word-wrap: break-word;
+    width: 30%;
+    font-size: 1.5rem;
     background-color: #424243cf;
-    border: 1px solid black;
-    margin: 0 auto;
-    grid-area: post1;
+    margin: 2%;
 }
 
-.post2 {
-    font-size: 20px;
-    background-color: #424243cf;
-    border: 1px solid black;
-    grid-area: post2;
-}
+.post1 h3,p ,
+.post2 h3,p ,
+.post3 h3,p 
 
-.post3 {
-    font-size: 20px;
-    background-color: #424243cf;
-    border: 1px solid black;
-    grid-area: post3;
+{
+margin-top:3%;
 }
 
 .post1 img {
@@ -363,26 +350,14 @@ footer {
     margin-top: 60px;
     background-color: #424243;
 }
-.h1categorias {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    margin-left:16%;
-    font-size: 30px;
-    color: #FCD900;
-}
+
 .container-categorias {
-    display: grid;
-    grid-template-columns: 30% 30% 30%;
-    grid-template-rows: auto;
-    grid-auto-columns: auto;
-    gap: 5px 1%;
-    grid-auto-flow: row;
+    display: flex;
     justify-content: center;
     align-content: center;
     justify-items: center;
     align-items: center;
-    grid-template-areas:
-        "categ1 categ2 categ3";
+
 }
 .container-categorias li {
     padding: 10px;
@@ -401,46 +376,23 @@ footer {
     text-decoration: none;  
 }
 
-
-.categ1 {
-    grid-area: categ1;
-    text-align: left;
-    margin: 0;
-}
-
-.categ2 {
-    grid-area: categ2;
-}
-
-.categ3 {
-    grid-area: categ3;
-}
-
-
-.h1servicosfooter {
+.h1footer {
     padding-top: 10px;
     padding-bottom: 30px;
-    margin-left:16%;
-    font-size: 30px;
+    text-align: center;
+    font-size: 3rem;
     color: #FCD900;
 }
 .servicosfooter {
-    display: grid;
-    grid-template-columns: 48% 48% ;
-    grid-template-rows: auto;
-    grid-auto-columns: auto;
-    gap: 5px 1%;
-    grid-auto-flow: row;
+    display: flex;
     justify-content: center;
     align-content: center;
     justify-items: center;
     align-items: center;
-    grid-template-areas:
-        "svs1 svs2";
 }
 .servicosfooter li {
     padding: 10px;
-
+    padding-bottom: 20px;
     text-align: justify;
     word-break: keep-all;    
     
@@ -456,38 +408,14 @@ footer {
     text-decoration: none;  
 }
 
-
-.svs1 {
-    grid-area: svs1;
-    text-align: left;
-}
-
-.svs2 {
-    grid-area: svs2;
-}
-
 /* container contatos footer */
 
 .container-contatos
- {  display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: auto auto;
-    gap: 3px 3px;
-    grid-auto-flow: row;
-    justify-content: stretch;
-    align-content: center;
-    justify-items: start;
-    align-items: start;
-    grid-template-areas:
-      "contato endereco"
-      "horario siganos";
+
+ {  
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+
   }
-  
-  .contato { grid-area: contato; }
-  
-  .endereco { grid-area: endereco; }
-  
-  .horario { grid-area: horario; }
-  
-  .siganos { grid-area: siganos; }
-  
