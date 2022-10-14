@@ -353,6 +353,7 @@ footer {
 
 .container-categorias {
     display: flex;
+    width: 100%;
     justify-content: center;
     align-content: center;
     justify-items: center;
@@ -360,13 +361,16 @@ footer {
 
 }
 .container-categorias li {
+    width: 100%;
     padding: 10px;
-    text-align: justify;
+    text-align: center;
     word-break: keep-all;    
     
     
 }
 .container-categorias a {
+
+    font-size: 1.5rem;
     color: #FFFFFF;
     text-decoration: none;  
 }
@@ -375,7 +379,12 @@ footer {
     color: #FCD900;
     text-decoration: none;  
 }
-
+.categ1,
+.categ2,
+.categ3 {
+    width: 30%;
+    
+}
 .h1footer {
     padding-top: 10px;
     padding-bottom: 30px;
@@ -407,7 +416,11 @@ footer {
     color: #FCD900;
     text-decoration: none;  
 }
-
+.svs1,
+.svs2 {
+    width: 48%;
+    
+}
 /* container contatos footer */
 
 .container-contatos
