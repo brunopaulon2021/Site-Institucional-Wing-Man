@@ -121,9 +121,28 @@ nav {
 
 /* menu modal */
 .menuModal {
-    display: none;
+  display: none;
+  transition: transform 0.2s;
+  -webkit-transition: transform 0.2s;
+  -moz-transition: transform 0.2s;
+  -ms-transition: transform 0.2s;
+  -o-transition: transform 0.2s;
+
+  font-family: serif;
+  list-style: none;
+  
 }
 
+.menuModal a {  
+  font-weight: bold;
+  text-decoration: solid;
+  color:white;
+  text-decoration: none;
+  font-size: 2rem;
+}
+.menuModal a:hover {  
+    color: #858274;
+  }
 /* produtos */
 .h1produtos {
     text-align: center;
