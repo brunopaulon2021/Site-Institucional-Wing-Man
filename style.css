@@ -17,7 +17,7 @@ header img {
 .header {
     width: 100%;
     background-color: #424243;
-    display: flexbox;
+    display: flex;
 
 }
 
