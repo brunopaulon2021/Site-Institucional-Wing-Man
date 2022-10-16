@@ -65,7 +65,7 @@ header img {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    max-width: 200px;
+    max-width: 300px;
     margin: 0 auto;
     padding: 2%;
 }
@@ -107,7 +107,7 @@ nav {
     background-size: cover;
 }
 
-.menuFixo button {
+.btn-modal {
     width: 45px;
     height: 45px;
     cursor: pointer;
@@ -139,6 +139,7 @@ nav {
 }
 
 .container-produtos {
+    color:white;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -314,11 +315,14 @@ nav {
 .post2,
 .post3
 
-{   word-wrap: break-word;
+{   
+    color:white;
+    word-wrap: break-word;
     width: 30%;
     font-size: 1.5rem;
     background-color: #424243cf;
     margin: 2%;
+    padding: 5px;
 }
 
 .post1 h3,p ,
@@ -347,6 +351,7 @@ margin-top:3%;
 
 /* Footer categorias */
 footer {
+    margin: 0 auto;
     margin-top: 60px;
     background-color: #424243;
 }
@@ -386,13 +391,14 @@ footer {
     
 }
 .h1footer {
-    padding-top: 10px;
+    padding-top: 60px;
     padding-bottom: 30px;
     text-align: center;
     font-size: 3rem;
     color: #FCD900;
 }
 .servicosfooter {
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -402,13 +408,21 @@ footer {
 .servicosfooter li {
     padding: 10px;
     padding-bottom: 20px;
+<<<<<<< HEAD
+    text-align: center;
+=======
     text-align: justify;
+>>>>>>> e81a780b533047efcb7a8df6839b943549f3efbe
     word-break: break-all;   
     justify-content: center;
     align-content: center;
     justify-items: center;
     align-items: center;
+<<<<<<< HEAD
+    margin: 0 auto;
+=======
     margin: auto;
+>>>>>>> e81a780b533047efcb7a8df6839b943549f3efbe
 
     
     
@@ -449,4 +463,13 @@ footer {
     font-size:1.5rem ;
   }
 
+<<<<<<< HEAD
+  .horario {
+    text-align: center;
+    font-size: 3rem;
+    color: #FCD900;
+    margin-top:50px;
+  }
+=======
 
+>>>>>>> e81a780b533047efcb7a8df6839b943549f3efbe
