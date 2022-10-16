@@ -17,8 +17,7 @@ header img {
 .header {
     width: 100%;
     background-color: #424243;
-    display: flex;
-    flex-direction:column;
+    display: flexbox;
 
 }
 
@@ -108,7 +107,7 @@ nav {
     background-size: cover;
 }
 
-.btn-modal {
+.menuFixo button {
     width: 45px;
     height: 45px;
     cursor: pointer;
@@ -409,24 +408,12 @@ footer {
 .servicosfooter li {
     padding: 10px;
     padding-bottom: 20px;
-<<<<<<< HEAD
     text-align: center;
-=======
-    text-align: justify;
->>>>>>> e81a780b533047efcb7a8df6839b943549f3efbe
     word-break: break-all;   
     justify-content: center;
     align-content: center;
     justify-items: center;
-    align-items: center;
-<<<<<<< HEAD
-    margin: 0 auto;
-=======
-    margin: auto;
->>>>>>> e81a780b533047efcb7a8df6839b943549f3efbe
-
-    
-    
+    align-items: center;  
 }
 .servicosfooter a {
     color: #FFFFFF;
@@ -464,13 +451,9 @@ footer {
     font-size:1.5rem ;
   }
 
-<<<<<<< HEAD
   .horario {
     text-align: center;
     font-size: 3rem;
     color: #FCD900;
     margin-top:50px;
   }
-=======
-
->>>>>>> e81a780b533047efcb7a8df6839b943549f3efbe
