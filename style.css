@@ -120,25 +120,30 @@ nav {
 
 /* menu modal */
 .menuModal {
+    position: fixed;
+    top: 0;
+    left: 0;
     display: none;
     font-family: serif;
     list-style: none;
-    background-color: #a5a593;
-    position: relative;
-    margin-left: 10%;
+    background-color: #a5a5932a;
+    translate: 1px;
     backdrop-filter: blur( 50px);
     width: 250px;
-    flex-direction: column;
     text-align: center;
+    height: 100%;
+}
+.menuModal li  {
+    padding-top: 70px;
 }
 
-
-.menuModal a {
+.menuModal  a {
     font-weight: bold;
     text-decoration: solid;
-    color: rgb(10, 2, 2);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 2rem;
+    padding-top: 15px;
    
 }
 
@@ -146,17 +151,28 @@ nav {
     color: #858274;
     background-color: #FCD900;
 }
+#btn-open  { 
+    position: absolute;
+    scale: 3;
+    right: 0;
+    left: 0;
+    top: 30px;
+    width: 200px;
+    color:white;
+    background-color: #424243;
+    border: none;
+
+}
 
 #btn-close {
-    position: relative;
-    scale: 0;
-}
-
-button i {
-color:black;
-scale: 3;
+    position: fixed;
+    scale:0;
+    left: 0;
+    top: 0;
+    width: 250px;
 
 }
+
 /* produtos */
 .h1produtos {
     text-align: center;

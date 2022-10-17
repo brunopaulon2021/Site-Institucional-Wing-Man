@@ -4,8 +4,13 @@ const btnOpen = document.querySelector('#btn-open')
 const btnClose = document.querySelector('#btn-close')
 
 const openMenu = () => {
-    menu.style.display != 'none' ? menu.style.display = 'none' : menu.style.display = 'block';
-    btnClose.style.scale != '0' ? btnClose.style.scale = '0' : btnClose.style.scale = '1';
+
+    if (menu.style.display == 'none')
+        (menu.style.display = 'block')
+        (btnOpen.style.scale = '0')
+        else  
+        (menu.style.display = 'none')
+
 };
 
-btnOpen.addEventListener ("click" , openMenu)
+btnOpen.addEventListener("click", openMenu)
