@@ -122,15 +122,10 @@ nav {
 /* menu modal */
 .menuModal {
   display: none;
-  transition: transform 0.2s;
-  -webkit-transition: transform 0.2s;
-  -moz-transition: transform 0.2s;
-  -ms-transition: transform 0.2s;
-  -o-transition: transform 0.2s;
-
   font-family: serif;
-  list-style: dotted;
-  
+  list-style: none;
+  transition-delay: 1s;
+  background: #ccc;
 }
 
 .menuModal a {  
