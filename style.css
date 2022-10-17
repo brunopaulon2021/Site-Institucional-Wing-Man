@@ -144,7 +144,6 @@ nav {
     text-decoration: none;
     font-size: 2rem;
     padding-top: 15px;
-   
 }
 
 .menuModal a:hover {
@@ -161,16 +160,21 @@ nav {
     color:white;
     background-color: #424243;
     border: none;
+    cursor: pointer;
 
 }
 
 #btn-close {
-    position: fixed;
-    scale:0;
-    left: 0;
-    top: 0;
-    width: 250px;
-
+    position: absolute;
+    scale: 0;
+    right: 0;
+    left: 20px;
+    top: 30px;
+    width: 200px;
+    color:white;
+    background-color: #424243;
+    border: none;
+    cursor: pointer;
 }
 
 /* produtos */
