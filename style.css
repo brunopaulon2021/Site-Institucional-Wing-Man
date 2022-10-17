@@ -132,9 +132,14 @@ nav {
     width: 250px;
     text-align: center;
     height: 100%;
+    max-height: 100%;
+}
+.menuModal li:first-child  {
+   padding-top: 90px;
 }
 .menuModal li  {
-    padding-top: 70px;
+
+    padding-top: 30px;
 }
 
 .menuModal  a {
@@ -161,6 +166,7 @@ nav {
     background-color: #424243;
     border: none;
     cursor: pointer;
+    
 
 }
 
