@@ -28,7 +28,7 @@ header img {
     justify-content: space-around;
     max-width: 250px;
     margin: 0 auto;
-    padding: 2% ;
+    padding: 2%;
 }
 
 .idiomas a:hover {
@@ -44,14 +44,14 @@ header img {
     align-content: center;
     align-self: center;
     width: 100%;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
 .contato a {
     text-align: center;
     color: white;
     text-decoration: none;
-    font-size: 1.3rem;  
+    font-size: 1.3rem;
     padding: 2%;
 }
 
@@ -120,22 +120,26 @@ nav {
 
 /* menu modal */
 .menuModal {
-  display: none;
-  font-family: serif;
-  list-style: none;
-  background-color: #FCD900 ;
+    display: none;
+    font-family: serif;
+    list-style: none;
+    background-color: #FCD900;
+    transition: all 0.3s ease-in-out;
 }
 
-.menuModal a {  
-  font-weight: bold;
-  text-decoration: solid;
-  color:white;
-  text-decoration: none;
-  font-size: 2rem;
+
+.menuModal a {
+    font-weight: bold;
+    text-decoration: solid;
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
 }
-.menuModal a:hover {  
+
+.menuModal a:hover {
     color: #858274;
-  }
+}
+
 /* produtos */
 .h1produtos {
     text-align: center;
@@ -145,19 +149,19 @@ nav {
 
 .h1produtos h1 {
     margin: 5px auto;
-    color: #FCD900 ;
+    color: #FCD900;
     text-align: center;
     justify-content: center;
 }
 
 .container-produtos {
-    color:white;
+    color: white;
     display: flex;
     justify-content: center;
     width: 100%;
-    margin:  0 auto;
+    margin: 0 auto;
     gap: 1%;
-   
+
 }
 
 .caldeiras {
@@ -215,12 +219,14 @@ nav {
     background-color: #ECECEC;
     margin-top: 30px;
 }
+
 .servicos {
     gap: 15px;
     display: flex;
     flex-direction: row;
     width: 100%;
 }
+
 .serviços h1 {
     color: rgb(107, 104, 104);
     font-size: 3rem;
@@ -238,11 +244,12 @@ nav {
 
 .serviçoh1 {
     text-decoration: none;
-    font-size: 3rem;    
+    font-size: 3rem;
     color: black;
     text-align: center;
     margin: 30px auto;
 }
+
 .reformas,
 .laudos,
 .rotores,
@@ -325,10 +332,8 @@ nav {
 
 .post1,
 .post2,
-.post3
-
-{   
-    color:white;
+.post3 {
+    color: white;
     word-wrap: break-word;
     width: 30%;
     font-size: 1.5rem;
@@ -337,12 +342,13 @@ nav {
     padding: 5px;
 }
 
-.post1 h3,p ,
-.post2 h3,p ,
-.post3 h3,p 
-
-{
-margin-top:3%;
+.post1 h3,
+p,
+.post2 h3,
+p,
+.post3 h3,
+p {
+    margin-top: 3%;
 }
 
 .post1 img {
@@ -377,31 +383,35 @@ footer {
     align-items: center;
 
 }
+
 .container-categorias li {
     width: 100%;
     padding: 10px;
     text-align: center;
-    word-break: keep-all;    
-    
-    
+    word-break: keep-all;
+
+
 }
+
 .container-categorias a {
 
     font-size: 1.5rem;
     color: #FFFFFF;
-    text-decoration: none;  
+    text-decoration: none;
 }
 
 .container-categorias a:hover {
     color: #FCD900;
-    text-decoration: none;  
+    text-decoration: none;
 }
+
 .categ1,
 .categ2,
 .categ3 {
     width: 30%;
-    
+
 }
+
 .h1footer {
     padding-top: 60px;
     padding-bottom: 30px;
@@ -409,6 +419,7 @@ footer {
     font-size: 3rem;
     color: #FCD900;
 }
+
 .servicosfooter {
     margin: 0 auto;
     display: flex;
@@ -417,57 +428,60 @@ footer {
     justify-items: center;
     align-items: center;
 }
+
 .servicosfooter li {
     padding: 10px;
     padding-bottom: 20px;
     text-align: center;
-    word-break: break-all;   
+    word-break: break-all;
     justify-content: center;
     align-content: center;
     justify-items: center;
-    align-items: center;  
+    align-items: center;
 }
+
 .servicosfooter a {
     color: #FFFFFF;
-    text-decoration: none;  
+    text-decoration: none;
     font-size: 1.5rem;
-    margin:auto;
+    margin: auto;
 }
 
 .servicosfooter a:hover {
     color: #FCD900;
-    text-decoration: none;  
+    text-decoration: none;
 }
+
 .svs1,
 .svs2 {
     justify-content: center;
-    margin:0 auto;
+    margin: 0 auto;
     text-align: center;
     width: 48%;
-    
+
 }
+
 /* container contatos footer */
 
-.container-contatos
-
- {  
-    display:flex;
+.container-contatos {
+    display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     text-align: center;
 
-  }
+}
 
-  .contato li a, p {
-    color:white;
-    font-size:1.5rem ;
-  }
+.contato li a,
+p {
+    color: white;
+    font-size: 1.5rem;
+}
 
-  .horario {
+.horario {
     text-align: center;
     font-size: 3rem;
     color: #FCD900;
-    margin-top:50px;
-  }
+    margin-top: 50px;
+}
 
-  /* responsivo */
+/* responsivo */
