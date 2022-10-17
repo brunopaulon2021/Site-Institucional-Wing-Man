@@ -124,8 +124,7 @@ nav {
   display: none;
   font-family: serif;
   list-style: none;
-  transition-delay: 1s;
-  background: #ccc;
+  background-color: #FCD900 ;
 }
 
 .menuModal a {  
