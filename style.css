@@ -123,44 +123,63 @@ nav {
     display: none;
     font-family: serif;
     list-style: none;
-    background-color: #FCD900;
-    transition: all 0.3s ease-in-out;
+    background-color: #a5a593;
+    position: relative;
+    margin-left: 10%;
+    backdrop-filter: blur( 50px);
+    width: 250px;
+    flex-direction: column;
+    text-align: center;
 }
 
 
 .menuModal a {
     font-weight: bold;
     text-decoration: solid;
-    color: white;
+    color: rgb(10, 2, 2);
     text-decoration: none;
     font-size: 2rem;
+   
 }
 
 .menuModal a:hover {
     color: #858274;
+    background-color: #FCD900;
 }
 
+#btn-close {
+    position: relative;
+    scale: 0;
+}
+
+button i {
+color:black;
+scale: 3;
+
+}
 /* produtos */
 .h1produtos {
     text-align: center;
     font-size: 3rem;
     padding: 5%;
 }
+
 .h1galeria {
     margin: 5px auto;
     color: rgb(252, 217, 0);
     text-align: center;
-    font-family:'Raleway-Regular';
+    font-family: 'Raleway-Regular';
     font-size: 2.5rem;
     background-color: #ccc;
     justify-content: center;
-    text-shadow: 0 0 15px rgba(255,255,255,.5), 0 0 10px rgba(255,255,255,.5), 10px 4px 3px #484848;
+    text-shadow: 0 0 15px rgba(255, 255, 255, .5), 0 0 10px rgba(255, 255, 255, .5), 10px 4px 3px #090707;
 }
 
 .carousel {
     background-color: #ccc;
     padding-bottom: 20px;
 }
+
 .h1produtos h1 {
     margin: 5px auto;
     color: #FCD900;
