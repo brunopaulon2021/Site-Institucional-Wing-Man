@@ -11,9 +11,6 @@ const openMenu = () => {
         (btnClose.style.scale = '3')
         else  
         (menu.style.display = 'none')
-        (btnOpen.style.scale = '3')
-        (btnClose.style.scale = '0')
-
 };
 
-btnOpen.addEventListener("click", openMenu)
+btnOpen.addEventListener("mouseenter", openMenu)

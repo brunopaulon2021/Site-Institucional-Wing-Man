@@ -131,13 +131,10 @@ nav {
     backdrop-filter: blur( 50px);
     width: 100%;
     text-align: center;
-    height: 33%;
-    z-index: 1000;
+    height: 100%;
 }
 .menuModal li  {
-    padding-top: 8%;
-    padding-left: 10px;
-    margin: 0 auto;
+    padding-top: 70px;
 }
 
 .menuModal  a {
@@ -164,6 +161,7 @@ nav {
     background-color: #424243;
     border: none;
     cursor: pointer;
+    
 
 }
 
