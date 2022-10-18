@@ -126,23 +126,27 @@ nav {
     display: none;
     font-family: serif;
     list-style: none;
-    background-color: #a5a5932a;
-    translate: 1px;
-    backdrop-filter: blur( 50px);
+    background-color: rgba(102, 102, 102, 0.541);
+    backdrop-filter: blur( 150px);
     width: 100%;
     text-align: center;
-    height: 100%;
+    height: 31.5%;
+    z-index: 1000;
+    
 }
 .menuModal li  {
-    padding-top: 70px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .menuModal  a {
     font-weight: bold;
     text-decoration: solid;
-    color: rgb(255, 255, 255);
+    color: #FCD900;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 2.5rem;
     padding-top: 15px;
 }
 
@@ -150,32 +154,30 @@ nav {
     color: #858274;
     background-color: #FCD900;
 }
-#btn-open  { 
-    position: absolute;
-    scale: 3;
-    right: 0;
-    left: 0;
+#btn-open  {
+    position:absolute;
+    left: 30px;
     top: 30px;
-    width: 200px;
+    scale: 3;
+    width: 20px;
     color:white;
     background-color: #424243;
     border: none;
     cursor: pointer;
-    
-
+    justify-content: center;
 }
 
 #btn-close {
-    position: fixed;
-    scale: 1;
-    right: 0;
-    left: 40%;
-    top: 30%;
-    width: 200px;
+    position:fixed;
+    left: 30px;
+    top: 30px;
+    scale: 3;
+    width: 20px;
     color:white;
     background-color: #424243;
     border: none;
     cursor: pointer;
+    justify-content: center;
     z-index: 1001;
 }
 
