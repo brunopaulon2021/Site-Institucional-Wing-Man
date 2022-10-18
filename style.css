@@ -129,12 +129,15 @@ nav {
     background-color: #a5a5932a;
     translate: 1px;
     backdrop-filter: blur( 50px);
-    width: 250px;
+    width: 100%;
     text-align: center;
-    height: 100%;
+    height: 33%;
+    z-index: 1000;
 }
 .menuModal li  {
-    padding-top: 70px;
+    padding-top: 8%;
+    padding-left: 10px;
+    margin: 0 auto;
 }
 
 .menuModal  a {
@@ -165,16 +168,17 @@ nav {
 }
 
 #btn-close {
-    position: absolute;
-    scale: 0;
+    position: fixed;
+    scale: 1;
     right: 0;
-    left: 20px;
-    top: 30px;
+    left: 40%;
+    top: 30%;
     width: 200px;
     color:white;
     background-color: #424243;
     border: none;
     cursor: pointer;
+    z-index: 1001;
 }
 
 /* produtos */

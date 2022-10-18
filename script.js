@@ -6,7 +6,7 @@ const btnClose = document.querySelector('#btn-close')
 const openMenu = () => {
 
     if (menu.style.display == 'none')
-        (menu.style.display = 'block')
+        (menu.style.display = 'flex')
         (btnOpen.style.scale = '0')
         (btnClose.style.scale = '3')
         else  
