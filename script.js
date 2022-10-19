@@ -8,7 +8,8 @@ const openMenu = () =>
             if (menu.style.display == 'none')
                 
             {
-                menu.style.display = 'flex'
+                menu.style.display = 'block'
+                
                 btnOpen.style.scale = '0'
                 btnClose.style.scale = '3'
             }
@@ -24,7 +25,7 @@ const closeMenu = () =>
                 btnClose.style.scale = '0'
                 btnOpen.style.scale = '3'
             }
-            if  (menu.style.display = 'flex')
+            if  (menu.style.display = 'block')
 
             {
                     menu.style.display = 'none'
