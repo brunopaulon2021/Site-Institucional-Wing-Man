@@ -223,7 +223,13 @@ nav {
     gap: 1%;
 
 }
+.container-produtos img {
+    width: 100%;
+    height: 50%;
+    margin: 0 auto;
+    gap: 1%;
 
+}
 .caldeiras {
     width: 23%;
     background-color: #424243;
@@ -761,15 +767,21 @@ p {
         justify-content: center;
         width: 100%;
         max-width: 100%;
+        margin: 5px auto;
+        gap: 1%;
+    }
+    .container-produtos img {
+        width: 100%;
+        height: 270px;
         margin: 0 auto;
         gap: 1%;
-
+    
     }
-
     .caldeiras,
     .gruas,
     .maquinascabos,
     .maquinastecidos {
+        height:auto ;
         width: 100%;
         max-width: 100%;
         background-color: #000000;
@@ -784,6 +796,7 @@ p {
         text-decoration: none;
         text-align: center;
         font-size: 1rem;
+        padding: 20px;
     }
 
     /* Serviços */
@@ -1040,22 +1053,453 @@ p {
     }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-    ...
-}
-
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-    ...
+@media only screen and (min-width: 601px) and (max-width:800px)
+{
+.container-produtos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width:100% ;
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-    ...
+
+    .caldeiras,
+    .gruas,
+    .maquinascabos,
+    .maquinastecidos {
+
+        height:auto ;
+        width: 47%;
+        max-width: 50%;
+    }
+     /* SERVIÇOS */ 
+
+    .container-serviços {
+
+        background-color: #ececec94;
+        margin-top: 30px;
+        display: block;
+        max-width: 100%;
+    }
+
+    .servicos {
+        gap: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .serviços h1 {
+        letter-spacing: 15px;
+        color: rgb(11, 4, 4);
+        font-size: 3rem;
+        padding: 5%;
+        text-align: center;
+    }
+
+    .reformas,
+    .laudos,
+    .rotores,
+    .montagens {
+        width: 48%;
+        max-width: 100%;
+        padding-bottom: 50px;
+    }
+
+    .reformas a,
+    .laudos a,
+    .rotores a,
+    .montagens a {
+        padding-bottom: 20px;
+        text-decoration: none;
+        color: black;
+        text-align: center;
+        font-size: 1rem;
+    }
+/* Sobre */
+
+.sobre {
+    padding-bottom: 50px;
+    background-color: #FCD900;
+    text-align: justify;
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-    ...
+.sobre h1 {
+    letter-spacing: 15px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: 5px solid white;
+    font-size: 2rem;
+    text-align: center;
+    color: #424243;
+}
+
+.sobre p {
+    margin: 3% auto;
+    text-align: justify;
+    color: #424243;
+    padding-top: 30px;
+    font-size: 1.2rem;
+    max-width: 70%;
+}
+
+/* BLOG */
+
+.blog h1 {
+    letter-spacing: 15px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: 5px solid white;
+    font-size: 2rem;
+    text-align: center;
+    color: #424243;
+}
+
+.container-blog {
+    text-align: center;
+    display: block;
+    max-width: 100%;
+}
+
+.post1,
+.post2,
+.post3 {
+    color: white;
+    width: 100%;
+    font-size: 1rem;
+    background-color: #070604;
+    margin: 2% auto;
+    padding: 5px;
+}
+
+.post1 h3,
+.post2 h3,
+.post3 h3 {
+    font-size: 1.5rem;
+}
+
+.post1 p,
+.post2 p,
+.post3 p {
+    font-size: 1rem;
+    margin-top: 5%;
+}
+
+.post1 img {
+
+    width: 100%;
+    height: 200px;
+}
+
+.post2 img {
+    width: 100%;
+    height: 200px;
+}
+
+.post3 img {
+    width: 100%;
+    height: 200px;
+}
+
+/* Footer categorias */
+footer {
+    margin: 0 auto;
+    margin-top: 60px;
+    background-color: #fcca00;
+}
+
+.container-categorias {
+    display: block;
+    width: 100%;
+}
+
+.container-categorias li {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    word-break: keep-all;
+
+
+}
+
+.container-categorias a {
+
+    font-size: 1rem;
+    color: #000000;
+    text-decoration: none;
+}
+
+.container-categorias a:hover {
+    color: #fbfaf3;
+    text-decoration: none;
+}
+
+.categ1,
+.categ2,
+.categ3 {
+    width: 100%;
+}
+
+.h1footer {
+    letter-spacing: 15px;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 3rem;
+    color: #000000;
+}
+
+.servicosfooter {
+    margin: 0 auto;
+    display: block;
+    max-width: 100%;
+}
+
+.servicosfooter li {
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+
+}
+
+.servicosfooter a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1rem;
+    margin: 0 auto;
+}
+
+.servicosfooter a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.svs1,
+.svs2 {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+
+}
+
+/* container contatos footer */
+
+.container-contatos {
+    display: block;
+    text-align: center;
+    max-width: 100%
+}
+
+.contato h4,a,p {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.h1footer h1{
+    margin: 0 auto;
+    max-width: 100%;
+    text-align: center;
+}
+#midiafooter {
+    color: #f3f3f2;
+    font-size: 2rem;
+    padding-left: 10px;
+}
+#midiafooter:hover{
+    color: #090907;
+    font-size: 2rem;
+    padding-left: 10px;
+}
+.horario {
+    max-width: 100%;
+    text-align: center;
+    color: #ffffff;
+}
+.header {
+    max-width: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.idiomas {
+    display: flex;
+    margin: 0 auto;
+    padding: 2% auto;
+}
+
+.idiomas a {
+    padding-left: 10px;
+}
+
+.idiomas a:hover {
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+}
+
+.contato {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.contato a {
+    text-align: center;
+    color: #FCD900;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 5px 0;
+
+}
+
+.contato a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.midiasSociais {
+    margin: 0 auto;
+    padding: 2%;
+    padding-left: 10px;
+}
+
+#midia {
+    color: #FCD900;
+    font-size: 2rem;
+    padding-left: 10px;
+}
+
+#midia:hover {
+    color: white;
+    font-size: 2rem;
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+}
+
+
+/* menu fixo */
+
+.menuFixo {
+    font-size: 1rem;
+    color: #FCD900;
+    display: flex;
+    margin: 0 2%;
+    padding: 3%;
+    justify-content: space-around;
+}
+
+nav {
+    background: #666;
+}
+
+.menuFixo img {
+    background-color: #fcca00;
+    width: 100px;
+    border: solid 5px #ffffff;
+}
+
+/* menu modal */
+.menuModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    list-style: none;
+    background: rgb(252, 202, 0);
+    background: linear-gradient(180deg, rgba(252, 202, 0, 1) 0%, rgba(237, 255, 1, 1) 30%, rgba(160, 161, 161, 1) 100%);
+    min-width: 100%;
+    text-align: center;
+    height: 100%;
+    z-index: 1000;
+
+}
+
+.menuModal li {
+    display: block;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+.menuModal a {
+    display: block;
+    font-weight: bold;
+    text-decoration: solid;
+    color: #f3f3f3;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding-top: 15px;
+}
+
+.menuModal a:hover {
+    color: #858274;
+    background-color: #FCD900;
+
+}
+
+#btn-open {
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    scale: 2;
+    width: 20px;
+    color: rgb(0, 0, 0);
+    background-color: #fdfdff;
+    border: none;
+    cursor: pointer;
+    justify-content: center;
+}
+
+#btn-close {
+    position: fixed;
+    left: 30px;
+    top: 30px;
+    width: 20px;
+    color: rgb(0, 0, 0);
+    background-color: #fdfdff;
+    border: none;
+    cursor: pointer;
+    justify-content: center;
+    scale: 0;
+    z-index: 1001;
+}
+
+/* produtos */
+.h1produtos {
+    text-align: center;
+    font-size: 2rem;
+    padding: 5%;
+}
+
+.h1galeria {
+    margin: 5px auto;
+    color: black;
+    font-family: poppins;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 2.5rem;
+    background-color: rgb(255, 198, 40);
+    justify-content: center;
+    text-shadow: none;
+
+}
+
+.carousel {
+    background-color: rgb(255, 198, 40);
+    padding-bottom: 20px;
+    max-width: 100%;
+}
+
 }
