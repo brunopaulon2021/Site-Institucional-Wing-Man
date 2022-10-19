@@ -551,11 +551,9 @@ p {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    * {
-        max-width: 100%;
-    }
-
+   
     .header {
+        max-width: 100%;
         width: 100%;
         background-color: black;
         display: flex;
@@ -627,12 +625,6 @@ p {
 
     /* menu fixo */
 
-    @font-face {
-        src: url(/assets/imagens/Deep\ Shadow.ttf);
-        font-family: 'Raleway-Regular';
-        font-weight: normal;
-    }
-
     .menuFixo {
         font-size: 1rem;
         color: #FCD900;
@@ -643,8 +635,7 @@ p {
     }
 
     nav {
-        background-image: url(/assets/imagens/fundo-abstrato-preto-e-amarelo-grunge_1017-26684.webp);
-        background-size: cover;
+        background: #666;
     }
 
     .menuFixo img {
@@ -657,7 +648,7 @@ p {
     .menuModal {
         position: fixed;
         top: 0;
-        left:0;
+        left: 0;
         display: none;
         list-style: none;
         background: rgb(252, 202, 0);
@@ -674,7 +665,7 @@ p {
         align-items: center;
         text-align: center;
         margin: 0 auto;
-        
+
     }
 
     .menuModal a {
@@ -697,7 +688,7 @@ p {
         position: absolute;
         left: 50px;
         top: 50px;
-        scale: 1;
+        scale: 2;
         width: 20px;
         color: rgb(0, 0, 0);
         background-color: #fdfdff;
@@ -729,14 +720,14 @@ p {
 
     .h1galeria {
         margin: 5px auto;
-        color:black;
+        color: black;
         font-family: poppins;
         text-align: center;
         padding-top: 5px;
         font-size: 2.5rem;
         background-color: rgb(255, 198, 40);
         justify-content: center;
-        text-shadow:none;
+        text-shadow: none;
 
     }
 
@@ -769,26 +760,23 @@ p {
     .caldeiras,
     .gruas,
     .maquinascabos,
-    .maquinastecidos 
-
-     {
+    .maquinastecidos {
         width: 100%;
         max-width: 100%;
         background-color: #000000;
 
     }
 
-    .caldeiras a, 
+    .caldeiras a,
     .gruas a,
     .maquinascabos a,
-    .maquinastecidos a
-
-     {
+    .maquinastecidos a {
         color: #FCD900;
         text-decoration: none;
         text-align: center;
         font-size: 1rem;
     }
+
     /* Serviços */
 
     .container-serviços {
@@ -827,15 +815,14 @@ p {
     .montagens {
         width: 100%;
         max-width: 100%;
-        padding-bottom:50px;
+        padding-bottom: 50px;
     }
 
     .reformas a,
-    .laudos a ,
-    .rotores a ,
-    .montagens a
-     {
-        padding-bottom:20px;
+    .laudos a,
+    .rotores a,
+    .montagens a {
+        padding-bottom: 20px;
         text-decoration: none;
         color: black;
         text-align: center;
@@ -847,97 +834,97 @@ p {
 
     .sobre {
         padding-bottom: 50px;
-        background-color: #424243;
+        background-color: #FCD900;
         text-align: justify;
     }
 
     .sobre h1 {
+        letter-spacing: 15px;
         padding-top: 50px;
         padding-bottom: 50px;
-        border-bottom: 5px solid #FCD900;
-        font-size: 3rem;
+        border-bottom: 5px solid white;
+        font-size: 2rem;
         text-align: center;
-        color: white;
+        color: #424243;
     }
 
     .sobre p {
-        margin: 0 auto;
+        margin: 3% auto;
         text-align: justify;
-        word-wrap: break-word;
-        color: #FFFFFF;
+        color: #424243;
         padding-top: 30px;
-        font-size: 2rem;
-        width: 80%;
+        font-size: 1.2rem;
+        max-width: 70%;
     }
 
     /* BLOG */
 
     .blog h1 {
-        font-size: 3rem;
+        letter-spacing: 15px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        border-bottom: 5px solid white;
+        font-size: 2rem;
         text-align: center;
-        padding-top: 30px;
-        padding-bottom: 30px;
+        color: #424243;
     }
 
     .container-blog {
         text-align: center;
-        display: flex;
-        gap: 1%;
-        width: 100%;
+        display: block;
+        max-width: 100%;
     }
 
     .post1,
     .post2,
     .post3 {
         color: white;
-        word-wrap: break-word;
-        width: 30%;
-        font-size: 1.5rem;
-        background-color: #424243cf;
-        margin: 2%;
+        width: 100%;
+        font-size: 1rem;
+        background-color: #070604;
+        margin: 2% auto;
         padding: 5px;
     }
 
     .post1 h3,
-    p,
     .post2 h3,
-    p,
-    .post3 h3,
-    p {
-        margin-top: 3%;
+    .post3 h3 {
+        font-size: 1.5rem;
+    }
+
+    .post1 p,
+    .post2 p,
+    .post3 p {
+        font-size: 1rem;
+        margin-top: 5%;
     }
 
     .post1 img {
 
         width: 100%;
-        height: 150px;
+        height: 200px;
     }
 
     .post2 img {
         width: 100%;
-        height: 150px;
+        height: 200px;
     }
 
     .post3 img {
         width: 100%;
-        height: 150px;
+        height: 200px;
     }
 
     /* Footer categorias */
     footer {
         margin: 0 auto;
         margin-top: 60px;
-        background-color: #424243;
+        background-color: #fcca00;
     }
 
     .container-categorias {
-        display: flex;
+        display: block;
         width: 100%;
-        justify-content: center;
-        align-content: center;
-        justify-items: center;
-        align-items: center;
-
     }
 
     .container-categorias li {
@@ -951,96 +938,94 @@ p {
 
     .container-categorias a {
 
-        font-size: 1.5rem;
-        color: #FFFFFF;
+        font-size: 1rem;
+        color: #000000;
         text-decoration: none;
     }
 
     .container-categorias a:hover {
-        color: #FCD900;
+        color: #fbfaf3;
         text-decoration: none;
     }
 
     .categ1,
     .categ2,
     .categ3 {
-        width: 30%;
-
+        width: 100%;
     }
 
     .h1footer {
+        letter-spacing: 15px;
         padding-top: 60px;
         padding-bottom: 30px;
         text-align: center;
         font-size: 3rem;
-        color: #FCD900;
+        color: #000000;
     }
 
     .servicosfooter {
         margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        justify-items: center;
-        align-items: center;
+        display: block;
+        max-width: 100%;
     }
 
     .servicosfooter li {
         padding: 10px;
-        padding-bottom: 20px;
         text-align: center;
-        word-break: break-all;
-        justify-content: center;
-        align-content: center;
-        justify-items: center;
-        align-items: center;
+        width: 100%;
+
     }
 
     .servicosfooter a {
-        color: #FFFFFF;
+        color: #000000;
         text-decoration: none;
-        font-size: 1.5rem;
-        margin: auto;
+        font-size: 1rem;
+        margin: 0 auto;
     }
 
     .servicosfooter a:hover {
-        color: #FCD900;
+        color: #ffffff;
         text-decoration: none;
     }
 
     .svs1,
     .svs2 {
-        justify-content: center;
         margin: 0 auto;
         text-align: center;
-        width: 48%;
+        width: 100%;
 
     }
 
     /* container contatos footer */
 
     .container-contatos {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
+        display: block;
         text-align: center;
-
+        max-width: 100%
     }
 
-    .container-contatos p {
-        margin-bottom: 10px;
-    }
-
-    .contato li a,
-    p {
+    .contato h4 {
         color: white;
         font-size: 1.5rem;
     }
 
-    .horario {
+    .contato a,
+    p {
+        color: white;
+        font-size: 1.2rem;
+    }
+
+    .h1footer h1{
+        margin: 0 auto;
+        max-width: 100%;
         text-align: center;
-        font-size: 3rem;
-        color: #FCD900;
+    }
+
+    .horario {
+        max-width: 100%;
+        text-align: center;
+        font-size: 2rem;
+        color: #ffffff;
     }
 }
 
