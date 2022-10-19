@@ -746,145 +746,102 @@ p {
         max-width: 100%;
     }
 
-    .h1produtos h1 {
+    .h1produtos {
         margin: 5px auto;
         color: #FCD900;
         text-align: center;
         justify-content: center;
+        background: #000;
+        letter-spacing: 10px;
+        max-width: 100%;
     }
 
     .container-produtos {
-        color: white;
-        display: flex;
+        display: block;
         justify-content: center;
         width: 100%;
+        max-width: 100%;
         margin: 0 auto;
         gap: 1%;
 
     }
 
-    .caldeiras {
-        width: 23%;
-        background-color: #424243;
+    .caldeiras,
+    .gruas,
+    .maquinascabos,
+    .maquinastecidos 
+
+     {
+        width: 100%;
+        max-width: 100%;
+        background-color: #000000;
+
     }
 
-    .caldeiras a {
+    .caldeiras a, 
+    .gruas a,
+    .maquinascabos a,
+    .maquinastecidos a
+
+     {
+        color: #FCD900;
         text-decoration: none;
-        color: white;
         text-align: center;
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
-
-    .gruas {
-        width: 23%;
-        background-color: #424243;
-    }
-
-    .gruas a {
-        text-decoration: none;
-        color: white;
-        text-align: center;
-        font-size: 1.2rem;
-    }
-
-    .maquinascabos {
-        width: 23%;
-        background-color: #424243;
-    }
-
-    .maquinascabos a {
-        text-decoration: none;
-        color: white;
-        text-align: center;
-        font-size: 1.2rem;
-    }
-
-    .maquinastecidos {
-        width: 23%;
-        background-color: #424243;
-    }
-
-    .maquinastecidos a {
-        text-decoration: none;
-        color: white;
-        text-align: center;
-        font-size: 1.2rem;
-
-    }
-
     /* Serviços */
 
     .container-serviços {
-        background-color: #ECECEC;
+
+        background-color: #ececec94;
         margin-top: 30px;
+        display: block;
+        max-width: 100%;
     }
 
     .servicos {
         gap: 15px;
-        display: flex;
-        flex-direction: row;
+        display: block;
         width: 100%;
+        max-width: 100%;
     }
 
     .serviços h1 {
-        color: rgb(107, 104, 104);
+        letter-spacing: 15px;
+        color: rgb(11, 4, 4);
         font-size: 3rem;
         padding: 5%;
         text-align: center;
     }
 
     .container-serviços {
-        display: flex;
-        flex-direction: column;
+        display: block;
         gap: 1%;
         height: auto;
         padding-bottom: 90px;
-    }
-
-    .serviçoh1 {
-        text-decoration: none;
-        font-size: 3rem;
-        color: black;
-        text-align: center;
-        margin: 30px auto;
     }
 
     .reformas,
     .laudos,
     .rotores,
     .montagens {
-        width: 25%;
+        width: 100%;
+        max-width: 100%;
+        padding-bottom:50px;
     }
 
-    .reformas a {
+    .reformas a,
+    .laudos a ,
+    .rotores a ,
+    .montagens a
+     {
+        padding-bottom:20px;
         text-decoration: none;
         color: black;
         text-align: center;
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
-    .laudos a {
-        text-decoration: none;
-        color: black;
-        text-align: center;
-        font-size: 1.2rem;
-    }
-
-
-    .rotores a {
-        text-decoration: none;
-        color: black;
-        text-align: center;
-        font-size: 1.2rem;
-    }
-
-
-    .montagens a {
-        text-decoration: none;
-        color: black;
-        text-align: center;
-        font-size: 1.2rem;
-    }
 
     /* Sobre */
 
