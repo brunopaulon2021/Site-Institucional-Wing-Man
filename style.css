@@ -540,7 +540,16 @@ p {
     color: white;
     font-size: 1.5rem;
 }
-
+#midiafooter{
+    color: #fafafa;
+    font-size: 2rem;
+    padding-left: 10px;
+}
+#midiafooter:hover{
+    color: #090907;
+    font-size: 2rem;
+    padding-left: 10px;
+}
 .horario {
     text-align: center;
     font-size: 3rem;
@@ -1004,15 +1013,9 @@ p {
         max-width: 100%
     }
 
-    .contato h4 {
+    .contato h4,a,p {
         color: white;
         font-size: 1.5rem;
-    }
-
-    .contato a,
-    p {
-        color: white;
-        font-size: 1.2rem;
     }
 
     .h1footer h1{
@@ -1020,11 +1023,19 @@ p {
         max-width: 100%;
         text-align: center;
     }
-
+    #midiafooter {
+        color: #f3f3f2;
+        font-size: 2rem;
+        padding-left: 10px;
+    }
+    #midiafooter:hover{
+        color: #090907;
+        font-size: 2rem;
+        padding-left: 10px;
+    }
     .horario {
         max-width: 100%;
         text-align: center;
-        font-size: 2rem;
         color: #ffffff;
     }
 }
