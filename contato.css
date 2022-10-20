@@ -10,7 +10,6 @@ body {
     width: 100%;
 }
 
-
 header img {
     width: 30px;
 }
@@ -157,22 +156,67 @@ header img {
     scale: 0;
     z-index: 1001;
 }
+
 main {
     text-align: center;
-    background: white;
-    height: 1000px;
+    background-image: url(/assets/imagens/bg-contato.jpg);
+}
+
+.formularioContato {
+    height: 100%;
+    padding: 100px;
+    font-size: 3rem;
+
+}
+
+input {
+    background-color:rgba(255, 255, 255, 0.567) ;
+    text-align: center;
+    resize: none;
+    width: 500px;
+    margin: 0 auto;
+    font-size: 1.5rem;
+}
+
+textarea {
+    background-color:rgba(255, 255, 255, 0.567) ;
+    text-align: center;
+    resize: none;
+    width: 500px;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    height: 150px;
+}
+
+#btnEnviar {
+    text-align: center;
+    width: 500px;
+    margin: 20px auto;
+    height: 50px;
+    font-size: 2rem;
+    background-color: rgba(8, 2, 2, 0.528);
+    color: white;
+    border: none;
+    border-bottom: rgb(7, 8, 6) 5px solid;
+    cursor: pointer;
+}
+
+#btnEnviar:hover {
+transition-duration: 1s;
+background-color: #666;
+border-bottom: rgb(255, 255, 255) 5px solid;
 }
 
 #form {
-    width: 500px;
     margin: 0 auto;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
+    font-size: 1.5rem;
 }
+
 /* Footer categorias */
 footer {
     margin: 0 auto;
-    margin-top: 60px;
     background-color: #424243;
 }
 
@@ -379,23 +423,8 @@ p {
 
     /* menu fixo */
 
-    .menuFixo {
-        font-size: 1rem;
-        color: #FCD900;
-        display: flex;
-        margin: 0 2%;
-        padding: 3%;
-        justify-content: space-around;
-    }
-
     nav {
         background: #666;
-    }
-
-    .menuFixo img {
-        background-color: #fcca00;
-        width: 100px;
-        border: solid 5px #ffffff;
     }
 
     /* menu modal */
@@ -463,219 +492,6 @@ p {
         justify-content: center;
         scale: 0;
         z-index: 1001;
-    }
-
-    /* produtos */
-    .h1produtos {
-        text-align: center;
-        font-size: 2rem;
-        padding: 5%;
-    }
-
-    .h1galeria {
-        margin: 5px auto;
-        color: black;
-        font-family: poppins;
-        text-align: center;
-        padding-top: 5px;
-        font-size: 2.5rem;
-        background-color: rgb(255, 198, 40);
-        justify-content: center;
-        text-shadow: none;
-
-    }
-
-    .carousel {
-        background-color: rgb(255, 198, 40);
-        padding-bottom: 20px;
-        max-width: 100%;
-    }
-
-    .h1produtos {
-        margin: 5px auto;
-        color: #FCD900;
-        text-align: center;
-        justify-content: center;
-        background: #000;
-        letter-spacing: 10px;
-        max-width: 100%;
-    }
-
-    .container-produtos {
-        display: block;
-        justify-content: center;
-        width: 100%;
-        max-width: 100%;
-        margin: 5px auto;
-        gap: 1%;
-    }
-
-    .container-produtos img {
-        width: 100%;
-        height: 270px;
-        margin: 0 auto;
-        gap: 1%;
-
-    }
-
-    .caldeiras,
-    .gruas,
-    .maquinascabos,
-    .maquinastecidos {
-        height: auto;
-        width: 100%;
-        max-width: 100%;
-        background-color: #000000;
-
-    }
-
-    .caldeiras a,
-    .gruas a,
-    .maquinascabos a,
-    .maquinastecidos a {
-        color: #FCD900;
-        text-decoration: none;
-        text-align: center;
-        font-size: 1rem;
-        padding: 20px;
-    }
-
-    /* Serviços */
-
-    .container-serviços {
-
-        background-color: #ececec94;
-        margin-top: 30px;
-        display: block;
-        max-width: 100%;
-    }
-
-    .servicos {
-        gap: 15px;
-        display: block;
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .serviços h1 {
-        letter-spacing: 15px;
-        color: rgb(11, 4, 4);
-        font-size: 3rem;
-        padding: 5%;
-        text-align: center;
-    }
-
-    .container-serviços {
-        display: block;
-        gap: 1%;
-        height: auto;
-        padding-bottom: 90px;
-    }
-
-    .reformas,
-    .laudos,
-    .rotores,
-    .montagens {
-        width: 100%;
-        max-width: 100%;
-        padding-bottom: 50px;
-    }
-
-    .reformas a,
-    .laudos a,
-    .rotores a,
-    .montagens a {
-        padding-bottom: 20px;
-        text-decoration: none;
-        color: black;
-        text-align: center;
-        font-size: 1rem;
-    }
-
-
-    /* Sobre */
-
-    .sobre {
-        padding-bottom: 50px;
-        background-color: #FCD900;
-        text-align: justify;
-    }
-
-    .sobre h1 {
-        letter-spacing: 15px;
-        padding-top: 50px;
-        padding-bottom: 50px;
-        border-bottom: 5px solid white;
-        font-size: 2rem;
-        text-align: center;
-        color: #424243;
-    }
-
-    .sobre p {
-        margin: 3% auto;
-        text-align: justify;
-        color: #424243;
-        padding-top: 30px;
-        font-size: 1.2rem;
-        max-width: 70%;
-    }
-
-    /* BLOG */
-
-    .blog h1 {
-        letter-spacing: 15px;
-        padding-top: 50px;
-        padding-bottom: 50px;
-        border-bottom: 5px solid white;
-        font-size: 2rem;
-        text-align: center;
-        color: #424243;
-    }
-
-    .container-blog {
-        text-align: center;
-        display: block;
-        max-width: 100%;
-    }
-
-    .post1,
-    .post2,
-    .post3 {
-        color: white;
-        width: 100%;
-        font-size: 1rem;
-        background-color: #070604;
-        margin: 2% auto;
-        padding: 5px;
-    }
-
-    .post1 h3,
-    .post2 h3,
-    .post3 h3 {
-        font-size: 1.5rem;
-    }
-
-    .post1 p,
-    .post2 p,
-    .post3 p {
-        font-size: 1rem;
-        margin-top: 5%;
-    }
-
-    .post1 img {
-
-        width: 100%;
-        height: 200px;
-    }
-
-    .post2 img {
-        width: 100%;
-        height: 200px;
-    }
-
-    .post3 img {
-        width: 100%;
-        height: 200px;
     }
 
     /* Footer categorias */
@@ -801,154 +617,6 @@ p {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 601px) and (max-width:800px) {
-    .container-produtos {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        max-width: 100%;
-    }
-
-
-    .caldeiras,
-    .gruas,
-    .maquinascabos,
-    .maquinastecidos {
-
-        height: auto;
-        width: 47%;
-        max-width: 50%;
-    }
-
-    /* SERVIÇOS */
-
-    .container-serviços {
-
-        background-color: #ececec94;
-        margin-top: 30px;
-        display: block;
-        max-width: 100%;
-    }
-
-    .servicos {
-        gap: 15px;
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .serviços h1 {
-        letter-spacing: 15px;
-        color: rgb(11, 4, 4);
-        font-size: 3rem;
-        padding: 5%;
-        text-align: center;
-    }
-
-    .reformas,
-    .laudos,
-    .rotores,
-    .montagens {
-        width: 48%;
-        max-width: 100%;
-        padding-bottom: 50px;
-    }
-
-    .reformas a,
-    .laudos a,
-    .rotores a,
-    .montagens a {
-        padding-bottom: 20px;
-        text-decoration: none;
-        color: black;
-        text-align: center;
-        font-size: 1rem;
-    }
-
-    /* Sobre */
-
-    .sobre {
-        padding-bottom: 50px;
-        background-color: #FCD900;
-        text-align: justify;
-    }
-
-    .sobre h1 {
-        letter-spacing: 15px;
-        padding-top: 50px;
-        padding-bottom: 50px;
-        border-bottom: 5px solid white;
-        font-size: 2rem;
-        text-align: center;
-        color: #424243;
-    }
-
-    .sobre p {
-        margin: 3% auto;
-        text-align: justify;
-        color: #424243;
-        padding-top: 30px;
-        font-size: 1.2rem;
-        max-width: 70%;
-    }
-
-    /* BLOG */
-
-    .blog h1 {
-        letter-spacing: 15px;
-        padding-top: 50px;
-        padding-bottom: 50px;
-        border-bottom: 5px solid white;
-        font-size: 2rem;
-        text-align: center;
-        color: #424243;
-    }
-
-    .container-blog {
-        text-align: center;
-        display: block;
-        max-width: 100%;
-    }
-
-    .post1,
-    .post2,
-    .post3 {
-        color: white;
-        width: 100%;
-        font-size: 1rem;
-        background-color: #070604;
-        margin: 2% auto;
-        padding: 5px;
-    }
-
-    .post1 h3,
-    .post2 h3,
-    .post3 h3 {
-        font-size: 1.5rem;
-    }
-
-    .post1 p,
-    .post2 p,
-    .post3 p {
-        font-size: 1rem;
-        margin-top: 5%;
-    }
-
-    .post1 img {
-
-        width: 100%;
-        height: 200px;
-    }
-
-    .post2 img {
-        width: 100%;
-        height: 200px;
-    }
-
-    .post3 img {
-        width: 100%;
-        height: 200px;
-    }
 
     /* Footer categorias */
     footer {
@@ -1140,26 +808,8 @@ p {
         -o-transform: scale(1.5);
     }
 
-
-    /* menu fixo */
-
-    .menuFixo {
-        font-size: 1rem;
-        color: #FCD900;
-        display: flex;
-        margin: 0 2%;
-        padding: 3%;
-        justify-content: space-around;
-    }
-
     nav {
         background: #666;
-    }
-
-    .menuFixo img {
-        background-color: #fcca00;
-        width: 100px;
-        border: solid 5px #ffffff;
     }
 
     /* menu modal */
@@ -1227,31 +877,3 @@ p {
         scale: 0;
         z-index: 1001;
     }
-
-    /* produtos */
-    .h1produtos {
-        text-align: center;
-        font-size: 2rem;
-        padding: 5%;
-    }
-
-    .h1galeria {
-        margin: 5px auto;
-        color: black;
-        font-family: poppins;
-        text-align: center;
-        padding-top: 5px;
-        font-size: 2.5rem;
-        background-color: rgb(255, 198, 40);
-        justify-content: center;
-        text-shadow: none;
-
-    }
-
-    .carousel {
-        background-color: rgb(255, 198, 40);
-        padding-bottom: 20px;
-        max-width: 100%;
-    }
-
-}
