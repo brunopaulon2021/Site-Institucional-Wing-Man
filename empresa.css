@@ -1,0 +1,26 @@
+.sobre {
+    display:block;
+    width: 100%;
+    text-align: center;
+    max-width: 100%;
+}
+
+.sobre img {
+    height: 300px;
+    width: 500px !important;
+    text-align: center;
+    max-width: 100%;
+}
+
+
+.sobre img {
+    height:100%;
+    width: 100px;
+    text-align: center;
+    max-width: 100%;
+}
+
+.textsobre h1 , p {
+    font-size: 1.5rem !important; 
+    width: 50%!important;
+}
