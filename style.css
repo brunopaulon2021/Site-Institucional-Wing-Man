@@ -200,7 +200,9 @@ nav {
     justify-content: center;
     text-shadow: 0 0 15px rgba(255, 255, 255, .5), 0 0 10px rgba(255, 255, 255, .5), 10px 4px 3px #090707;
 }
-
+body {
+    background-image: url(/assets/bg-produtos.jpg);
+}
 .carousel {
     background-color: #ccc;
     padding-bottom: 20px;

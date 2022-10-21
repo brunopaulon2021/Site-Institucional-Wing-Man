@@ -1,0 +1,1077 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+}
+
+body {
+    background-image: url(/assets/imagens/bg-produtos.jpg);
+    background-size: cover;
+}
+
+header img {
+    width: 30px;
+}
+
+.header {
+    width: 100%;
+    background-color: #424243;
+    display: flexbox;
+
+}
+
+
+.idiomas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 250px;
+    margin: 0 auto;
+    padding: 2%;
+}
+
+.idiomas a:hover {
+    transform: scale(1.5);
+}
+
+.contato {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.contato a {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding: 2%;
+}
+
+.contato a:hover {
+    color: #FCD900;
+    text-decoration: underline;
+}
+
+.midiasSociais {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 2%;
+}
+
+#midia {
+    color: #FCD900;
+    font-size: 2rem;
+
+}
+
+#midia:hover {
+    color: white;
+    font-size: 2rem;
+    transform: scale(1.5);
+
+}
+
+
+@font-face {
+    src: url(/assets/imagens/Deep\ Shadow.ttf);
+    font-family: 'Raleway-Regular';
+    font-weight: normal;
+}
+
+.menuFixo {
+    font-size: 2rem;
+    color: #FCD900;
+    display: flex;
+    margin: 0 2%;
+    padding: 3%;
+    justify-content: space-around;
+}
+
+nav {
+    background-image: url(/assets/imagens/fundo-abstrato-preto-e-amarelo-grunge_1017-26684.webp);
+    background-size: cover;
+}
+
+.menuFixo button {
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+}
+
+.menuFixo img {
+    background-color: #FCD900;
+    width: 200px;
+    border: solid 5px #424243;
+}
+
+/* menu modal */
+.menuModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    list-style: none;
+    background-color: rgba(102, 102, 102, 0.541);
+    backdrop-filter: blur(150px);
+    width: 40%;
+    text-align: center;
+    height: 100%;
+    z-index: 1000;
+
+}
+
+.menuModal li {
+    letter-spacing: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 0 100px;
+    padding-top: 20px;
+}
+
+.menuModal a {
+    font-weight: bold;
+    text-decoration: solid;
+    color: #FCD900;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding-top: 15px;
+}
+
+.menuModal a:hover {
+    color: #858274;
+    background-color: #FCD900;
+
+}
+
+#btn-open {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    scale: 3;
+    width: 20px;
+    color: white;
+    background-color: #424243;
+    border: none;
+    cursor: pointer;
+    justify-content: center;
+}
+
+#btn-close {
+    position: fixed;
+    left: 30px;
+    top: 30px;
+    width: 20px;
+    color: white;
+    background-color: #424243;
+    border: none;
+    cursor: pointer;
+    justify-content: center;
+    scale: 0;
+    z-index: 1001;
+}
+
+/* produtos */
+
+
+.h1produtos {
+    text-align: center;
+    font-size: 4rem;
+    padding: 5%;
+    color: #666;
+}
+
+.h1galeria {
+    margin: 5px auto;
+    color: rgb(252, 217, 0);
+    text-align: center;
+    font-family: 'Raleway-Regular';
+    font-size: 2.5rem;
+    background-color: #ccc;
+    justify-content: center;
+    text-shadow: 0 0 15px rgba(255, 255, 255, .5), 0 0 10px rgba(255, 255, 255, .5), 10px 4px 3px #090707;
+}
+
+.carousel {
+    background-color: #ccc;
+    padding-bottom: 20px;
+}
+
+.h1produtos h1 {
+    margin: 5px auto;
+    color: #FCD900;
+    text-align: center;
+    justify-content: center;
+}
+
+.container-produtos {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.container-produtos img {
+    max-width: 100%;
+    height: 50%;
+    margin: 0 auto;
+
+}
+
+.caldeiras {
+    width: 23%;
+    background-color: #424243;
+}
+
+.caldeiras a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.gruas {
+    width: 23%;
+    background-color: #424243;
+}
+
+.gruas a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.maquinascabos {
+    width: 23%;
+    background-color: #424243;
+}
+
+.maquinascabos a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.maquinastecidos {
+    width: 23%;
+    background-color: #424243;
+}
+
+.maquinastecidos a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+
+}
+
+.emBreve {
+    width: 23%;
+    background-color: #424243;
+}
+
+.emBreve a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+
+/* Footer categorias */
+footer {
+    margin: 0 auto;
+    margin-top: 60px;
+    background-color: #424243;
+}
+
+.container-categorias {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+
+}
+
+.container-categorias li {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    word-break: keep-all;
+
+
+}
+
+.container-categorias a {
+
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.container-categorias a:hover {
+    color: #FCD900;
+    text-decoration: none;
+}
+
+.categ1,
+.categ2,
+.categ3 {
+    width: 30%;
+
+}
+
+.h1footer {
+    padding-top: 60px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 3rem;
+    color: #FCD900;
+}
+
+.servicosfooter {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.servicosfooter li {
+    padding: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+    word-break: break-all;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.servicosfooter a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin: auto;
+}
+
+.servicosfooter a:hover {
+    color: #FCD900;
+    text-decoration: none;
+}
+
+.svs1,
+.svs2 {
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    width: 48%;
+
+}
+
+/* container contatos footer */
+
+.container-contatos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.container-contatos p {
+    margin-bottom: 10px;
+}
+
+.contato li a,
+p {
+    color: white;
+    font-size: 1.5rem;
+}
+
+#midiafooter {
+    color: #fafafa;
+    font-size: 2rem;
+    padding-left: 10px;
+}
+
+#midiafooter:hover {
+    color: #090907;
+    font-size: 2rem;
+    padding-left: 10px;
+}
+
+.horario {
+    text-align: center;
+    font-size: 3rem;
+    color: #FCD900;
+}
+
+/* responsivo */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    body {
+        background-image: url(/assets/imagens/bg-produtos.jpg);
+        background-size: cover;
+    }
+
+    .header {
+        max-width: 100%;
+        width: 100%;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .idiomas {
+        display: flex;
+        margin: 0 auto;
+        padding: 2% auto;
+    }
+
+    .idiomas a {
+        padding-left: 10px;
+    }
+
+    .idiomas a:hover {
+        transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+        -moz-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        -o-transform: scale(1.5);
+    }
+
+    .contato {
+        display: block;
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .contato a {
+        text-align: center;
+        color: #FCD900;
+        text-decoration: none;
+        font-size: 1rem;
+        padding: 5px 0;
+
+    }
+
+    .contato a:hover {
+        color: white;
+        text-decoration: underline;
+    }
+
+    .midiasSociais {
+        margin: 0 auto;
+        padding: 2%;
+        padding-left: 10px;
+    }
+
+    #midia {
+        color: #FCD900;
+        font-size: 2rem;
+        padding-left: 10px;
+    }
+
+    #midia:hover {
+        color: white;
+        font-size: 2rem;
+        transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+        -moz-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        -o-transform: scale(1.5);
+    }
+
+
+    /* menu fixo */
+
+    .menuFixo {
+        font-size: 1rem;
+        color: #FCD900;
+        display: flex;
+        margin: 0 2%;
+        padding: 3%;
+        justify-content: space-around;
+    }
+
+    nav {
+        background: #666;
+    }
+
+    .menuFixo img {
+        background-color: #fcca00;
+        width: 100px;
+        border: solid 5px #ffffff;
+    }
+
+    /* menu modal */
+    .menuModal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: none;
+        list-style: none;
+        background: rgb(252, 202, 0);
+        background: linear-gradient(180deg, rgba(252, 202, 0, 1) 0%, rgba(237, 255, 1, 1) 30%, rgba(160, 161, 161, 1) 100%);
+        min-width: 100%;
+        text-align: center;
+        height: 100%;
+        z-index: 1000;
+
+    }
+
+    .menuModal li {
+        display: block;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+
+    }
+
+    .menuModal a {
+        display: block;
+        font-weight: bold;
+        text-decoration: solid;
+        color: #f3f3f3;
+        text-decoration: none;
+        font-size: 1.5rem;
+        padding-top: 15px;
+    }
+
+    .menuModal a:hover {
+        color: #858274;
+        background-color: #FCD900;
+
+    }
+
+    #btn-open {
+        position: absolute;
+        left: 50px;
+        top: 50px;
+        scale: 2;
+        width: 20px;
+        color: rgb(0, 0, 0);
+        background-color: #fdfdff;
+        border: none;
+        cursor: pointer;
+        justify-content: center;
+    }
+
+    #btn-close {
+        position: fixed;
+        left: 30px;
+        top: 30px;
+        width: 20px;
+        color: rgb(0, 0, 0);
+        background-color: #fdfdff;
+        border: none;
+        cursor: pointer;
+        justify-content: center;
+        scale: 0;
+        z-index: 1001;
+    }
+
+    /* produtos */
+    .h1produtos {
+        text-align: center;
+        font-size: 2rem;
+        padding: 5%;
+    }
+
+    .h1produtos {
+        margin: 5px auto;
+        color: #666;
+        text-align: center;
+        justify-content: center;
+        letter-spacing: 10px;
+        max-width: 100%;
+    }
+
+    .container-produtos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        max-width: 100%;
+        margin: 5px auto;
+        gap: 1%;
+    }
+
+    .container-produtos img {
+        width: 100%;
+        height: 270px;
+        margin: 0 auto;
+        gap: 1%;
+
+    }
+
+    .caldeiras,
+    .gruas,
+    .maquinascabos,
+    .maquinastecidos,
+    .emBreve {
+        height: auto;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .caldeiras a,
+    .gruas a,
+    .maquinascabos a,
+    .maquinastecidos a,
+    .emBreve a {
+        color: #FCD900;
+        text-decoration: none;
+        text-align: center;
+        font-size: 1rem;
+        padding: 20px;
+    }
+
+    /* Footer categorias */
+    footer {
+        margin: 0 auto;
+        margin-top: 60px;
+        background-color: #fcca00;
+    }
+
+    .container-categorias {
+        display: block;
+        width: 100%;
+    }
+
+    .container-categorias li {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        word-break: keep-all;
+
+
+    }
+
+    .container-categorias a {
+
+        font-size: 1rem;
+        color: #000000;
+        text-decoration: none;
+    }
+
+    .container-categorias a:hover {
+        color: #fbfaf3;
+        text-decoration: none;
+    }
+
+    .categ1,
+    .categ2,
+    .categ3 {
+        width: 100%;
+    }
+
+    .h1footer {
+        letter-spacing: 15px;
+        padding-top: 60px;
+        padding-bottom: 30px;
+        text-align: center;
+        font-size: 3rem;
+        color: #000000;
+    }
+
+    .servicosfooter {
+        margin: 0 auto;
+        display: block;
+        max-width: 100%;
+    }
+
+    .servicosfooter li {
+        padding: 10px;
+        text-align: center;
+        width: 100%;
+
+    }
+
+    .servicosfooter a {
+        color: #000000;
+        text-decoration: none;
+        font-size: 1rem;
+        margin: 0 auto;
+    }
+
+    .servicosfooter a:hover {
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    .svs1,
+    .svs2 {
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+
+    }
+
+    /* container contatos footer */
+
+    .container-contatos {
+        display: block;
+        text-align: center;
+        max-width: 100%
+    }
+
+    .contato h4,
+    a,
+    p {
+        color: white;
+        font-size: 1.5rem;
+    }
+
+    .h1footer h1 {
+        margin: 0 auto;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    #midiafooter {
+        color: #f3f3f2;
+        font-size: 2rem;
+        padding-left: 10px;
+    }
+
+    #midiafooter:hover {
+        color: #090907;
+        font-size: 2rem;
+        padding-left: 10px;
+    }
+
+    .horario {
+        max-width: 100%;
+        text-align: center;
+        color: #ffffff;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 601px) and (max-width:800px) {
+    .container-produtos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 100%;
+    }
+
+
+    .caldeiras,
+    .gruas,
+    .maquinascabos,
+    .maquinastecidos,
+    .emBreve {
+
+        height: auto;
+        width: 47%;
+        max-width: 50%;
+    }
+
+    /* Footer categorias */
+    footer {
+        margin: 0 auto;
+        margin-top: 60px;
+        background-color: #fcca00;
+    }
+
+    .container-categorias {
+        display: block;
+        width: 100%;
+    }
+
+    .container-categorias li {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        word-break: keep-all;
+
+
+    }
+
+    .container-categorias a {
+
+        font-size: 1rem;
+        color: #000000;
+        text-decoration: none;
+    }
+
+    .container-categorias a:hover {
+        color: #fbfaf3;
+        text-decoration: none;
+    }
+
+    .categ1,
+    .categ2,
+    .categ3 {
+        width: 100%;
+    }
+
+    .h1footer {
+        letter-spacing: 15px;
+        padding-top: 60px;
+        padding-bottom: 30px;
+        text-align: center;
+        font-size: 3rem;
+        color: #000000;
+    }
+
+    .servicosfooter {
+        margin: 0 auto;
+        display: block;
+        max-width: 100%;
+    }
+
+    .servicosfooter li {
+        padding: 10px;
+        text-align: center;
+        width: 100%;
+
+    }
+
+    .servicosfooter a {
+        color: #000000;
+        text-decoration: none;
+        font-size: 1rem;
+        margin: 0 auto;
+    }
+
+    .servicosfooter a:hover {
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    .svs1,
+    .svs2 {
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+
+    }
+
+    /* container contatos footer */
+
+    .container-contatos {
+        display: block;
+        text-align: center;
+        max-width: 100%
+    }
+
+    .contato h4,
+    a,
+    p {
+        color: white;
+        font-size: 1.5rem;
+    }
+
+    .h1footer h1 {
+        margin: 0 auto;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    #midiafooter {
+        color: #f3f3f2;
+        font-size: 2rem;
+        padding-left: 10px;
+    }
+
+    #midiafooter:hover {
+        color: #090907;
+        font-size: 2rem;
+        padding-left: 10px;
+    }
+
+    .horario {
+        max-width: 100%;
+        text-align: center;
+        color: #ffffff;
+    }
+
+    .header {
+        max-width: 100%;
+        width: 100%;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .idiomas {
+        display: flex;
+        margin: 0 auto;
+        padding: 2% auto;
+    }
+
+    .idiomas a {
+        padding-left: 10px;
+    }
+
+    .idiomas a:hover {
+        transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+        -moz-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        -o-transform: scale(1.5);
+    }
+
+    .contato {
+        display: block;
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .contato a {
+        text-align: center;
+        color: #FCD900;
+        text-decoration: none;
+        font-size: 1rem;
+        padding: 5px 0;
+
+    }
+
+    .contato a:hover {
+        color: white;
+        text-decoration: underline;
+    }
+
+    .midiasSociais {
+        margin: 0 auto;
+        padding: 2%;
+        padding-left: 10px;
+    }
+
+    #midia {
+        color: #FCD900;
+        font-size: 2rem;
+        padding-left: 10px;
+    }
+
+    #midia:hover {
+        color: white;
+        font-size: 2rem;
+        transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+        -moz-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        -o-transform: scale(1.5);
+    }
+
+
+    /* menu fixo */
+
+    .menuFixo {
+        font-size: 1rem;
+        color: #FCD900;
+        display: flex;
+        margin: 0 2%;
+        padding: 3%;
+        justify-content: space-around;
+    }
+
+    nav {
+        background: #666;
+    }
+
+    .menuFixo img {
+        background-color: #fcca00;
+        width: 100px;
+        border: solid 5px #ffffff;
+    }
+
+    /* menu modal */
+    .menuModal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: none;
+        list-style: none;
+        background: rgb(252, 202, 0);
+        background: linear-gradient(180deg, rgba(252, 202, 0, 1) 0%, rgba(237, 255, 1, 1) 30%, rgba(160, 161, 161, 1) 100%);
+        min-width: 100%;
+        text-align: center;
+        height: 100%;
+        z-index: 1000;
+    }
+
+    .menuModal li {
+        display: block;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+
+    }
+
+    .menuModal a {
+        display: block;
+        font-weight: bold;
+        text-decoration: solid;
+        color: #f3f3f3;
+        text-decoration: none;
+        font-size: 1.5rem;
+        padding-top: 15px;
+    }
+
+    .menuModal a:hover {
+        color: #858274;
+        background-color: #FCD900;
+
+    }
+
+    #btn-open {
+        position: absolute;
+        left: 50px;
+        top: 50px;
+        scale: 2;
+        width: 20px;
+        color: rgb(0, 0, 0);
+        background-color: #fdfdff;
+        border: none;
+        cursor: pointer;
+        justify-content: center;
+    }
+
+    #btn-close {
+        position: fixed;
+        left: 30px;
+        top: 30px;
+        width: 20px;
+        color: rgb(0, 0, 0);
+        background-color: #fdfdff;
+        border: none;
+        cursor: pointer;
+        justify-content: center;
+        scale: 0;
+        z-index: 1001;
+    }
+}
