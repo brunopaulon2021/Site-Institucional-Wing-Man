@@ -1,3 +1,27 @@
+
+:root {
+
+/* Defining the CSS variables. */
+--text-color-titles:#040C17;
+--text-color-paragraph: #3D494F; 
+--bg-color-paragraph: #E8C40F; 
+--bg-color-titles: #F6B741; 
+--text-color-optional:#14263D;
+--bg-color-optional:#E8C40F;
+
+/* Defining two CSS variables. */
+--title-font-size:24px;
+--paragraph-font-size:18px;
+}
+
+/* Loading a font from the assets folder. */
+@font-face {
+    src: url(/assets/imagens/Deep\ Shadow.ttf);
+    font-family: 'Raleway-Regular';
+    font-weight: normal;
+}
+
+/* reset document */
 * {
     margin: 0;
     padding: 0;
@@ -5,11 +29,12 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* Setting the width of the html and body to 100% */
 html,
 body {
     width: 100%;
 }
-
+/* The CSS code for the header. */
 
 header img {
     width: 30px;
@@ -17,7 +42,7 @@ header img {
 
 .header {
     width: 100%;
-    background-color: #424243;
+    background-color: var(--bg-color-titles);
     display: flexbox;
 
 }
@@ -50,15 +75,15 @@ header img {
 
 .contato a {
     text-align: center;
-    color: white;
+    color: var(--text-color-optional);
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: var(--title-font-size);
     padding: 2%;
 }
 
 .contato a:hover {
-    color: #FCD900;
-    text-decoration: underline;
+    color: white;
+
 }
 
 .midiasSociais {
@@ -71,52 +96,44 @@ header img {
 }
 
 #midia {
-    color: #FCD900;
-    font-size: 2rem;
+    color: var(--text-color-titles);
+    font-size: var(--title-font-size);
 
 }
 
 #midia:hover {
     color: white;
-    font-size: 2rem;
     transform: scale(1.5);
-
 }
+/* Creating a banner that is fixed to the top of the page. */
 
-
-@font-face {
-    src: url(/assets/imagens/Deep\ Shadow.ttf);
-    font-family: 'Raleway-Regular';
-    font-weight: normal;
-}
-
-.menuFixo {
-    font-size: 2rem;
-    color: #FCD900;
+.banner {
+    font-size: 28px;
+    color: var(--text-color-paragraph);
     display: flex;
-    margin: 0 2%;
-    padding: 3%;
-    justify-content: space-around;
+    margin: 0 auto;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;    
+    background-color: rgba(0, 0, 0, 0.886);
+}
+.banner h1 {
+    font-family: 'Raleway-Regular';
+    padding-left: 20px;
 }
 
-nav {
-    background-image: url(/assets/imagens/fundo-abstrato-preto-e-amarelo-grunge_1017-26684.webp);
-    background-size: cover;
-}
-
-.menuFixo button {
-    width: 45px;
-    height: 45px;
+.banner button {
+    width: 15px;
+    height: 15px;
     cursor: pointer;
 }
 
-.menuFixo img {
-    background-color: #FCD900;
-    width: 200px;
-    border: solid 5px #424243;
+.banner img {
+    background-color: #666;
+    width: 150px;
+    border: solid 5px var(--bg-color-titles);
 }
 
-/* menu modal */
 .menuModal {
     position: fixed;
     top: 0;
@@ -151,9 +168,7 @@ nav {
 }
 
 .menuModal a:hover {
-    color: #858274;
-    background-color: #FCD900;
-
+    color: var(--text-color-paragraph);
 }
 
 #btn-open {
@@ -163,7 +178,7 @@ nav {
     scale: 3;
     width: 20px;
     color: white;
-    background-color: #424243;
+    background-color: var(--bg-color-titles);
     border: none;
     cursor: pointer;
     justify-content: center;
@@ -175,7 +190,7 @@ nav {
     top: 30px;
     width: 20px;
     color: white;
-    background-color: #424243;
+    background-color: var(--bg-color-titles);
     border: none;
     cursor: pointer;
     justify-content: center;
@@ -235,7 +250,7 @@ body {
 
 .caldeiras {
     width: 23%;
-    background-color: #424243;
+    background-color: var(--bg-color-titles);
 }
 
 .caldeiras a {
@@ -247,7 +262,7 @@ body {
 
 .gruas {
     width: 23%;
-    background-color: #424243;
+    background-color: var(--bg-color-titles);
 }
 
 .gruas a {
@@ -259,7 +274,7 @@ body {
 
 .maquinascabos {
     width: 23%;
-    background-color: #424243;
+    background-color: var(--bg-color-titles);
 }
 
 .maquinascabos a {
@@ -271,7 +286,7 @@ body {
 
 .maquinastecidos {
     width: 23%;
-    background-color: #424243;
+    background-color: var(--bg-color-titles);
 }
 
 .maquinastecidos a {
@@ -360,7 +375,7 @@ body {
 
 .sobre {
     padding-bottom: 50px;
-    background-color: #424243;
+    background-color: var(--bg-color-titles);
     text-align: justify;
 }
 
@@ -407,7 +422,7 @@ body {
     word-wrap: break-word;
     width: 28%;
     font-size: 1.5rem;
-    background-color: #424243cf;
+    background-color: var(--bg-color-titles)cf;
     margin: 2%;
     padding: 5px;
 }
@@ -441,7 +456,7 @@ p {
 footer {
     margin: 0 auto;
     margin-top: 60px;
-    background-color: #424243;
+    background-color: var(--bg-color-titles);
 }
 
 .container-categorias {
@@ -647,7 +662,7 @@ p {
 
     /* menu fixo */
 
-    .menuFixo {
+    .banner {
         font-size: 1rem;
         color: #FCD900;
         display: flex;
@@ -660,7 +675,7 @@ p {
         background: #666;
     }
 
-    .menuFixo img {
+    .banner img {
         background-color: #fcca00;
         width: 100px;
         border: solid 5px #ffffff;
@@ -876,13 +891,13 @@ p {
         border-bottom: 5px solid white;
         font-size: 2rem;
         text-align: center;
-        color: #424243;
+        color: var(--bg-color-titles);
     }
 
     .sobre p {
         margin: 3% auto;
         text-align: justify;
-        color: #424243;
+        color: var(--bg-color-titles);
         padding-top: 30px;
         font-size: 1.2rem;
         max-width: 70%;
@@ -897,7 +912,7 @@ p {
         border-bottom: 5px solid white;
         font-size: 2rem;
         text-align: center;
-        color: #424243;
+        color: var(--bg-color-titles);
     }
 
     .container-blog {
@@ -1149,13 +1164,13 @@ p {
         border-bottom: 5px solid white;
         font-size: 2rem;
         text-align: center;
-        color: #424243;
+        color: var(--bg-color-titles);
     }
 
     .sobre p {
         margin: 3% auto;
         text-align: justify;
-        color: #424243;
+        color: var(--bg-color-titles);
         padding-top: 30px;
         font-size: 1.2rem;
         max-width: 70%;
@@ -1170,7 +1185,7 @@ p {
         border-bottom: 5px solid white;
         font-size: 2rem;
         text-align: center;
-        color: #424243;
+        color: var(--bg-color-titles);
     }
 
     .container-blog {
@@ -1413,7 +1428,7 @@ p {
 
     /* menu fixo */
 
-    .menuFixo {
+    .banner {
         font-size: 1rem;
         color: #FCD900;
         display: flex;
@@ -1426,7 +1441,7 @@ p {
         background: #666;
     }
 
-    .menuFixo img {
+    .banner img {
         background-color: #fcca00;
         width: 100px;
         border: solid 5px #ffffff;
