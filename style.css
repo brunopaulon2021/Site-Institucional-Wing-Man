@@ -1,1542 +1,1486 @@
 
 :root {
 
-/* Defining the CSS variables. */
---text-color-titles:#040C17;
---text-color-paragraph: #3D494F; 
---bg-color-paragraph: #E8C40F; 
---bg-color-titles: #F6B741; 
---text-color-optional:#14263D;
---bg-color-optional:#E8C40F;
-
-/* Defining two CSS variables. */
---title-font-size:24px;
---paragraph-font-size:18px;
-}
-
-/* Loading a font from the assets folder. */
-@font-face {
-    src: url(/assets/imagens/Deep\ Shadow.ttf);
-    font-family: 'Raleway-Regular';
-    font-weight: normal;
-}
-
-/* reset document */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-/* Setting the width of the html and body to 100% */
-html,
-body {
-    width: 100%;
-}
-/* The CSS code for the header. */
-
-header img {
-    width: 30px;
-}
-
-.header {
-    width: 100%;
-    background-color: var(--bg-color-titles);
-    display: flexbox;
-
-}
-
-
-.idiomas {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    max-width: 250px;
-    margin: 0 auto;
-    padding: 2%;
-}
-
-.idiomas a:hover {
-    transform: scale(1.5);
-}
-
-.contato {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    align-content: center;
-    align-self: center;
-    width: 100%;
-    margin: 0 auto;
-}
-
-.contato a {
-    text-align: center;
-    color: var(--text-color-optional);
-    text-decoration: none;
-    font-size: var(--title-font-size);
-    padding: 2%;
-}
-
-.contato a:hover {
-    color: white;
-
-}
-
-.midiasSociais {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    max-width: 300px;
-    margin: 0 auto;
-    padding: 2%;
-}
-
-#midia {
-    color: var(--text-color-titles);
-    font-size: var(--title-font-size);
-
-}
-
-#midia:hover {
-    color: white;
-    transform: scale(1.5);
-}
-/* Creating a banner that is fixed to the top of the page. */
-
-.banner {
-    font-size: 28px;
-    color: var(--text-color-paragraph);
-    display: flex;
-    margin: 0 auto;
-    padding: 20px;
-    align-items: center;
-    justify-content: center;    
-    background-color: rgba(0, 0, 0, 0.886);
-}
-.banner h1 {
-    font-family: 'Raleway-Regular';
-    padding-left: 20px;
-}
-
-.banner button {
-    width: 15px;
-    height: 15px;
-    cursor: pointer;
-}
-
-.banner img {
-    background-color: #666;
-    width: 150px;
-    border: solid 5px var(--bg-color-titles);
-}
-
-.menuModal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: none;
-    list-style: none;
-    background-color: rgba(102, 102, 102, 0.541);
-    backdrop-filter: blur(150px);
-    width: 40%;
-    text-align: center;
-    height: 100%;
-    z-index: 1000;
-
-}
-
-.menuModal li {
-    letter-spacing: 10px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    margin: 0 100px;
-    padding-top: 20px;
-}
-
-.menuModal a {
-    font-weight: bold;
-    text-decoration: solid;
-    color: #FCD900;
-    text-decoration: none;
-    font-size: 1.5rem;
-    padding-top: 15px;
-}
-
-.menuModal a:hover {
-    color: var(--text-color-paragraph);
-}
-
-#btn-open {
-    position: absolute;
-    left: 30px;
-    top: 30px;
-    scale: 3;
-    width: 20px;
-    color: white;
-    background-color: var(--bg-color-titles);
-    border: none;
-    cursor: pointer;
-    justify-content: center;
-}
-
-#btn-close {
-    position: fixed;
-    left: 30px;
-    top: 30px;
-    width: 20px;
-    color: white;
-    background-color: var(--bg-color-titles);
-    border: none;
-    cursor: pointer;
-    justify-content: center;
-    scale: 0;
-    z-index: 1001;
-}
-
-/* produtos */
-.h1produtos {
-    text-align: center;
-    font-size: 3rem;
-    padding: 5%;
-}
-
-.h1galeria {
-    margin: 5px auto;
-    color: rgb(252, 217, 0);
-    text-align: center;
-    font-family: 'Raleway-Regular';
-    font-size: 2.5rem;
-    background-color: #ccc;
-    justify-content: center;
-    text-shadow: 0 0 15px rgba(255, 255, 255, .5), 0 0 10px rgba(255, 255, 255, .5), 10px 4px 3px #090707;
-}
-body {
-    background-image: url(/assets/bg-produtos.jpg);
-}
-.carousel {
-    background-color: #ccc;
-    padding-bottom: 20px;
-}
-
-.h1produtos h1 {
-    margin: 5px auto;
-    color: #FCD900;
-    text-align: center;
-    justify-content: center;
-}
-
-.container-produtos {
-    color: white;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: 0 auto;
-    gap: 1%;
-
-}
-
-.container-produtos img {
-    width: 100%;
-    height: 50%;
-    margin: 0 auto;
-    gap: 1%;
-
-}
-
-.caldeiras {
-    width: 23%;
-    background-color: var(--bg-color-titles);
-}
-
-.caldeiras a {
-    text-decoration: none;
-    color: white;
-    text-align: center;
-    font-size: 1.2rem;
-}
-
-.gruas {
-    width: 23%;
-    background-color: var(--bg-color-titles);
-}
-
-.gruas a {
-    text-decoration: none;
-    color: white;
-    text-align: center;
-    font-size: 1.2rem;
-}
-
-.maquinascabos {
-    width: 23%;
-    background-color: var(--bg-color-titles);
-}
-
-.maquinascabos a {
-    text-decoration: none;
-    color: white;
-    text-align: center;
-    font-size: 1.2rem;
-}
-
-.maquinastecidos {
-    width: 23%;
-    background-color: var(--bg-color-titles);
-}
-
-.maquinastecidos a {
-    text-decoration: none;
-    color: white;
-    text-align: center;
-    font-size: 1.2rem;
-
-}
-
-/* Serviços */
-
-.container-serviços {
-    background-color: #ECECEC;
-    margin-top: 30px;
-}
-
-.servicos {
-    gap: 15px;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-}
-
-.serviços h1 {
-    color: rgb(107, 104, 104);
-    font-size: 3rem;
-    padding: 5%;
-    text-align: center;
-}
-
-.container-serviços {
-    display: flex;
-    flex-direction: column;
-    gap: 1%;
-    height: auto;
-    padding-bottom: 90px;
-}
-
-.serviçoh1 {
-    text-decoration: none;
-    font-size: 3rem;
-    color: black;
-    text-align: center;
-    margin: 30px auto;
-}
-
-.reformas,
-.laudos,
-.rotores,
-.montagens {
-    width: 25%;
-}
-
-.reformas a {
-    text-decoration: none;
-    color: black;
-    text-align: center;
-    font-size: 1.2rem;
-}
-
-.laudos a {
-    text-decoration: none;
-    color: black;
-    text-align: center;
-    font-size: 1.2rem;
-}
-
-
-.rotores a {
-    text-decoration: none;
-    color: black;
-    text-align: center;
-    font-size: 1.2rem;
-}
-
-
-.montagens a {
-    text-decoration: none;
-    color: black;
-    text-align: center;
-    font-size: 1.2rem;
-}
-
-/* Sobre */
-
-.sobre {
-    padding-bottom: 50px;
-    background-color: var(--bg-color-titles);
-    text-align: justify;
-}
-
-.sobre h1 {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    border-bottom: 5px solid #FCD900;
-    font-size: 3rem;
-    text-align: center;
-    color: white;
-}
-
-.sobre p {
-    margin: 0 auto;
-    text-align: justify;
-    word-wrap: break-word;
-    color: #FFFFFF;
-    padding-top: 30px;
-    font-size: 2rem;
-    width: 80%;
-}
-
-/* BLOG */
-
-.blog h1 {
-    font-size: 3rem;
-    text-align: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-.container-blog {
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1%;
-    width: 100%;
-}
-
-.post1,
-.post2,
-.post3 {
-    color: white;
-    word-wrap: break-word;
-    width: 28%;
-    font-size: 1.5rem;
-    background-color: var(--bg-color-titles)cf;
-    margin: 2%;
-    padding: 5px;
-}
-
-.post1 h3,
-p,
-.post2 h3,
-p,
-.post3 h3,
-p {
-    margin-top: 3%;
-}
-
-.post1 img {
-
-    width: 100%;
-    height: 150px;
-}
-
-.post2 img {
-    width: 100%;
-    height: 150px;
-}
-
-.post3 img {
-    width: 100%;
-    height: 150px;
-}
-
-/* Footer categorias */
-footer {
-    margin: 0 auto;
-    margin-top: 60px;
-    background-color: var(--bg-color-titles);
-}
-
-.container-categorias {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-content: center;
-    justify-items: center;
-    align-items: center;
-
-}
-
-.container-categorias li {
-    width: 100%;
-    padding: 10px;
-    text-align: center;
-    word-break: keep-all;
-
-
-}
-
-.container-categorias a {
-
-    font-size: 1.5rem;
-    color: #FFFFFF;
-    text-decoration: none;
-}
-
-.container-categorias a:hover {
-    color: #FCD900;
-    text-decoration: none;
-}
-
-.categ1,
-.categ2,
-.categ3 {
-    width: 30%;
-
-}
-
-.h1footer {
-    padding-top: 60px;
-    padding-bottom: 30px;
-    text-align: center;
-    font-size: 3rem;
-    color: #FCD900;
-}
-
-.servicosfooter {
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    justify-items: center;
-    align-items: center;
-}
-
-.servicosfooter li {
-    padding: 10px;
-    padding-bottom: 20px;
-    text-align: center;
-    word-break: break-all;
-    justify-content: center;
-    align-content: center;
-    justify-items: center;
-    align-items: center;
-}
-
-.servicosfooter a {
-    color: #FFFFFF;
-    text-decoration: none;
-    font-size: 1.5rem;
-    margin: auto;
-}
-
-.servicosfooter a:hover {
-    color: #FCD900;
-    text-decoration: none;
-}
-
-.svs1,
-.svs2 {
-    justify-content: center;
-    margin: 0 auto;
-    text-align: center;
-    width: 48%;
-
-}
-
-/* container contatos footer */
-
-.container-contatos {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    text-align: center;
-
-}
-
-.container-contatos p {
-    margin-bottom: 10px;
-}
-
-.contato li a,
-p {
-    color: white;
-    font-size: 1.5rem;
-}
-
-#midiafooter {
-    color: #fafafa;
-    font-size: 2rem;
-    padding-left: 10px;
-}
-
-#midiafooter:hover {
-    color: #090907;
-    font-size: 2rem;
-    padding-left: 10px;
-}
-
-.horario {
-    text-align: center;
-    font-size: 3rem;
-    color: #FCD900;
-}
-
-/* responsivo */
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-
+    /* Defining the CSS variables. */
+    --text-color-titles:#040C17;
+    --text-color-paragraph: #3D494F; 
+    --bg-color-paragraph: #E8C40F; 
+    --bg-color-titles: #F6B741; 
+    --text-color-optional:#14263D;
+    --bg-color-optional:#E8C40F;
+    
+    /* Defining two CSS variables. */
+    --title-font-size:24px;
+    --paragraph-font-size:18px;
+    }
+    
+    /* Loading a font from the assets folder. */
+    @font-face {
+        src: url(/assets/imagens/Deep\ Shadow.ttf);
+        font-family: 'Raleway-Regular';
+        font-weight: normal;
+    }
+    
+    /* reset document */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    /* Setting the width of the html and body to 100% */
+    html,
+    body {
+        width: 100%;
+    }
+    /* The CSS code for the header. */
+    
+    header img {
+        width: 30px;
+    }
+    
     .header {
-        max-width: 100%;
         width: 100%;
-        background-color: black;
-        display: flex;
-        flex-direction: column;
+        background-color: var(--bg-color-titles);
+        display: flexbox;
+    
     }
-
-
+    
+    
     .idiomas {
-        display: flex;
-        margin: 0 auto;
-        padding: 2% auto;
-    }
-
-    .idiomas a {
-        padding-left: 10px;
-    }
-
-    .idiomas a:hover {
-        transform: scale(1.5);
-        -webkit-transform: scale(1.5);
-        -moz-transform: scale(1.5);
-        -ms-transform: scale(1.5);
-        -o-transform: scale(1.5);
-    }
-
-    .contato {
-        display: block;
-        text-align: center;
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    .contato a {
-        text-align: center;
-        color: #FCD900;
-        text-decoration: none;
-        font-size: 1rem;
-        padding: 5px 0;
-
-    }
-
-    .contato a:hover {
-        color: white;
-        text-decoration: underline;
-    }
-
-    .midiasSociais {
-        margin: 0 auto;
-        padding: 2%;
-        padding-left: 10px;
-    }
-
-    #midia {
-        color: #FCD900;
-        font-size: 2rem;
-        padding-left: 10px;
-    }
-
-    #midia:hover {
-        color: white;
-        font-size: 2rem;
-        transform: scale(1.5);
-        -webkit-transform: scale(1.5);
-        -moz-transform: scale(1.5);
-        -ms-transform: scale(1.5);
-        -o-transform: scale(1.5);
-    }
-
-
-    /* menu fixo */
-
-    .banner {
-        font-size: 1rem;
-        color: #FCD900;
-        display: flex;
-        margin: 0 2%;
-        padding: 3%;
-        justify-content: space-around;
-    }
-
-    nav {
-        background: #666;
-    }
-
-    .banner img {
-        background-color: #fcca00;
-        width: 100px;
-        border: solid 5px #ffffff;
-    }
-
-    /* menu modal */
-    .menuModal {
-        position: fixed;
-        top: 0;
-        left: 0;
-        display: none;
-        list-style: none;
-        background: rgb(252, 202, 0);
-        background: linear-gradient(180deg, rgba(252, 202, 0, 1) 0%, rgba(237, 255, 1, 1) 30%, rgba(160, 161, 161, 1) 100%);
-        min-width: 100%;
-        text-align: center;
-        height: 100%;
-        z-index: 1000;
-
-    }
-
-    .menuModal li {
-        display: block;
-        align-items: center;
-        text-align: center;
-        margin: 0 auto;
-
-    }
-
-    .menuModal a {
-        display: block;
-        font-weight: bold;
-        text-decoration: solid;
-        color: #f3f3f3;
-        text-decoration: none;
-        font-size: 1.5rem;
-        padding-top: 15px;
-    }
-
-    .menuModal a:hover {
-        color: #858274;
-        background-color: #FCD900;
-
-    }
-
-    #btn-open {
-        position: absolute;
-        left: 50px;
-        top: 50px;
-        scale: 2;
-        width: 20px;
-        color: rgb(0, 0, 0);
-        background-color: #fdfdff;
-        border: none;
-        cursor: pointer;
-        justify-content: center;
-    }
-
-    #btn-close {
-        position: fixed;
-        left: 30px;
-        top: 30px;
-        width: 20px;
-        color: rgb(0, 0, 0);
-        background-color: #fdfdff;
-        border: none;
-        cursor: pointer;
-        justify-content: center;
-        scale: 0;
-        z-index: 1001;
-    }
-
-    /* produtos */
-    .h1produtos {
-        text-align: center;
-        font-size: 2rem;
-        padding: 5%;
-    }
-
-    .h1galeria {
-        margin: 5px auto;
-        color: black;
-        font-family: poppins;
-        text-align: center;
-        padding-top: 5px;
-        font-size: 2.5rem;
-        background-color: rgb(255, 198, 40);
-        justify-content: center;
-        text-shadow: none;
-
-    }
-
-    .carousel {
-        background-color: rgb(255, 198, 40);
-        padding-bottom: 20px;
-        max-width: 100%;
-    }
-
-    .h1produtos {
-        margin: 5px auto;
-        color: #FCD900;
-        text-align: center;
-        justify-content: center;
-        background: #000;
-        letter-spacing: 10px;
-        max-width: 100%;
-    }
-
-    .container-produtos {
-        display: block;
-        justify-content: center;
-        width: 100%;
-        max-width: 100%;
-        margin: 5px auto;
-        gap: 1%;
-    }
-
-    .container-produtos img {
-        width: 100%;
-        height: 270px;
-        margin: 0 auto;
-        gap: 1%;
-
-    }
-
-    .caldeiras,
-    .gruas,
-    .maquinascabos,
-    .maquinastecidos {
-        height: auto;
-        width: 100%;
-        max-width: 100%;
-        background-color: #000000;
-
-    }
-
-    .caldeiras a,
-    .gruas a,
-    .maquinascabos a,
-    .maquinastecidos a {
-        color: #FCD900;
-        text-decoration: none;
-        text-align: center;
-        font-size: 1rem;
-        padding: 20px;
-    }
-
-    /* Serviços */
-
-    .container-serviços {
-
-        background-color: #ececec94;
-        margin-top: 30px;
-        display: block;
-        max-width: 100%;
-    }
-
-    .servicos {
-        gap: 15px;
-        display: block;
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .serviços h1 {
-        letter-spacing: 15px;
-        color: rgb(11, 4, 4);
-        font-size: 3rem;
-        padding: 5%;
-        text-align: center;
-    }
-
-    .container-serviços {
-        display: block;
-        gap: 1%;
-        height: auto;
-        padding-bottom: 90px;
-    }
-
-    .reformas,
-    .laudos,
-    .rotores,
-    .montagens {
-        width: 100%;
-        max-width: 100%;
-        padding-bottom: 50px;
-    }
-
-    .reformas a,
-    .laudos a,
-    .rotores a,
-    .montagens a {
-        padding-bottom: 20px;
-        text-decoration: none;
-        color: black;
-        text-align: center;
-        font-size: 1rem;
-    }
-
-
-    /* Sobre */
-
-    .sobre {
-        padding-bottom: 50px;
-        background-color: #FCD900;
-        text-align: justify;
-    }
-
-    .sobre h1 {
-        letter-spacing: 15px;
-        padding-top: 50px;
-        padding-bottom: 50px;
-        border-bottom: 5px solid white;
-        font-size: 2rem;
-        text-align: center;
-        color: var(--bg-color-titles);
-    }
-
-    .sobre p {
-        margin: 3% auto;
-        text-align: justify;
-        color: var(--bg-color-titles);
-        padding-top: 30px;
-        font-size: 1.2rem;
-        max-width: 70%;
-    }
-
-    /* BLOG */
-
-    .blog h1 {
-        letter-spacing: 15px;
-        padding-top: 50px;
-        padding-bottom: 50px;
-        border-bottom: 5px solid white;
-        font-size: 2rem;
-        text-align: center;
-        color: var(--bg-color-titles);
-    }
-
-    .container-blog {
-        text-align: center;
-        display: flex;
-        flex-wrap: wrap;
-        max-width: 100%;
-    }
-
-    .post1,
-    .post2,
-    .post3 {
-        color: white;
-        width: 100%;
-        font-size: 1rem;
-        background-color: #070604;
-        margin: 2% auto;
-        padding: 5px;
-    }
-
-    .post1 h3,
-    .post2 h3,
-    .post3 h3 {
-        font-size: 1.5rem;
-    }
-
-    .post1 p,
-    .post2 p,
-    .post3 p {
-        font-size: 1rem;
-        margin-top: 5%;
-    }
-
-    .post1 img {
-
-        width: 100%;
-        height: 200px;
-    }
-
-    .post2 img {
-        width: 100%;
-        height: 200px;
-    }
-
-    .post3 img {
-        width: 100%;
-        height: 200px;
-    }
-
-    /* Footer categorias */
-    footer {
-        margin: 0 auto;
-        margin-top: 60px;
-        background-color: #fcca00;
-    }
-
-    .container-categorias {
-        display: block;
-        width: 100%;
-    }
-
-    .container-categorias li {
-        width: 100%;
-        padding: 10px;
-        text-align: center;
-        word-break: keep-all;
-
-
-    }
-
-    .container-categorias a {
-
-        font-size: 1rem;
-        color: #000000;
-        text-decoration: none;
-    }
-
-    .container-categorias a:hover {
-        color: #fbfaf3;
-        text-decoration: none;
-    }
-
-    .categ1,
-    .categ2,
-    .categ3 {
-        width: 100%;
-    }
-
-    .h1footer {
-        letter-spacing: 15px;
-        padding-top: 60px;
-        padding-bottom: 30px;
-        text-align: center;
-        font-size: 3rem;
-        color: #000000;
-    }
-
-    .servicosfooter {
-        margin: 0 auto;
-        display: block;
-        max-width: 100%;
-    }
-
-    .servicosfooter li {
-        padding: 10px;
-        text-align: center;
-        width: 100%;
-
-    }
-
-    .servicosfooter a {
-        color: #000000;
-        text-decoration: none;
-        font-size: 1rem;
-        margin: 0 auto;
-    }
-
-    .servicosfooter a:hover {
-        color: #ffffff;
-        text-decoration: none;
-    }
-
-    .svs1,
-    .svs2 {
-        margin: 0 auto;
-        text-align: center;
-        width: 100%;
-
-    }
-
-    /* container contatos footer */
-
-    .container-contatos {
-        display: block;
-        text-align: center;
-        max-width: 100%
-    }
-
-    .contato h4,
-    a,
-    p {
-        color: white;
-        font-size: 1.5rem;
-    }
-
-    .h1footer h1 {
-        margin: 0 auto;
-        max-width: 100%;
-        text-align: center;
-    }
-
-    #midiafooter {
-        color: #f3f3f2;
-        font-size: 2rem;
-        padding-left: 10px;
-    }
-
-    #midiafooter:hover {
-        color: #090907;
-        font-size: 2rem;
-        padding-left: 10px;
-    }
-
-    .horario {
-        max-width: 100%;
-        text-align: center;
-        color: #ffffff;
-    }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 601px) and (max-width:800px) {
-    .container-produtos {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
-        max-width: 100%;
-    }
-
-
-    .caldeiras,
-    .gruas,
-    .maquinascabos,
-    .maquinastecidos {
-
-        height: auto;
-        width: 47%;
-        max-width: 50%;
-    }
-
-    /* SERVIÇOS */
-
-    .container-serviços {
-
-        background-color: #ececec94;
-        margin-top: 30px;
-        display: block;
-        max-width: 100%;
-    }
-
-    .servicos {
-        gap: 15px;
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .serviços h1 {
-        letter-spacing: 15px;
-        color: rgb(11, 4, 4);
-        font-size: 3rem;
-        padding: 5%;
-        text-align: center;
-    }
-
-    .reformas,
-    .laudos,
-    .rotores,
-    .montagens {
-        width: 48%;
-        max-width: 100%;
-        padding-bottom: 50px;
-    }
-
-    .reformas a,
-    .laudos a,
-    .rotores a,
-    .montagens a {
-        padding-bottom: 20px;
-        text-decoration: none;
-        color: black;
-        text-align: center;
-        font-size: 1rem;
-    }
-
-    /* Sobre */
-
-    .sobre {
-        padding-bottom: 50px;
-        background-color: #FCD900;
-        text-align: justify;
-    }
-
-    .sobre h1 {
-        letter-spacing: 15px;
-        padding-top: 50px;
-        padding-bottom: 50px;
-        border-bottom: 5px solid white;
-        font-size: 2rem;
-        text-align: center;
-        color: var(--bg-color-titles);
-    }
-
-    .sobre p {
-        margin: 3% auto;
-        text-align: justify;
-        color: var(--bg-color-titles);
-        padding-top: 30px;
-        font-size: 1.2rem;
-        max-width: 70%;
-    }
-
-    /* BLOG */
-
-    .blog h1 {
-        letter-spacing: 15px;
-        padding-top: 50px;
-        padding-bottom: 50px;
-        border-bottom: 5px solid white;
-        font-size: 2rem;
-        text-align: center;
-        color: var(--bg-color-titles);
-    }
-
-    .container-blog {
-        text-align: center;
-        display: flex;
-        flex-wrap: wrap;
-        max-width: 100%;
-    }
-
-    .post1,
-    .post2,
-    .post3 {
-        color: white;
-        width: 45%;
-        font-size: 1rem;
-        background-color: #070604;
-        margin: 2% auto;
-        padding: 5px;
-    }
-
-    .post1 h3,
-    .post2 h3,
-    .post3 h3 {
-        font-size: 1.5rem;
-    }
-
-    .post1 p,
-    .post2 p,
-    .post3 p {
-        font-size: 1rem;
-        margin-top: 5%;
-    }
-
-    .post1 img {
-
-        width: 100%;
-        height: 200px;
-    }
-
-    .post2 img {
-        width: 100%;
-        height: 200px;
-    }
-
-    .post3 img {
-        width: 100%;
-        height: 200px;
-    }
-
-    /* Footer categorias */
-    footer {
-        margin: 0 auto;
-        margin-top: 60px;
-        background-color: #fcca00;
-    }
-
-    .container-categorias {
-        display: block;
-        width: 100%;
-    }
-
-    .container-categorias li {
-        width: 100%;
-        padding: 10px;
-        text-align: center;
-        word-break: keep-all;
-
-
-    }
-
-    .container-categorias a {
-
-        font-size: 1rem;
-        color: #000000;
-        text-decoration: none;
-    }
-
-    .container-categorias a:hover {
-        color: #fbfaf3;
-        text-decoration: none;
-    }
-
-    .categ1,
-    .categ2,
-    .categ3 {
-        width: 100%;
-    }
-
-    .h1footer {
-        letter-spacing: 15px;
-        padding-top: 60px;
-        padding-bottom: 30px;
-        text-align: center;
-        font-size: 3rem;
-        color: #000000;
-    }
-
-    .servicosfooter {
-        margin: 0 auto;
-        display: block;
-        max-width: 100%;
-    }
-
-    .servicosfooter li {
-        padding: 10px;
-        text-align: center;
-        width: 100%;
-
-    }
-
-    .servicosfooter a {
-        color: #000000;
-        text-decoration: none;
-        font-size: 1rem;
-        margin: 0 auto;
-    }
-
-    .servicosfooter a:hover {
-        color: #ffffff;
-        text-decoration: none;
-    }
-
-    .svs1,
-    .svs2 {
-        margin: 0 auto;
-        text-align: center;
-        width: 100%;
-
-    }
-
-    /* container contatos footer */
-
-    .container-contatos {
-        display: block;
-        text-align: center;
-        max-width: 100%
-    }
-
-    .contato h4,
-    a,
-    p {
-        color: white;
-        font-size: 1.5rem;
-    }
-
-    .h1footer h1 {
-        margin: 0 auto;
-        max-width: 100%;
-        text-align: center;
-    }
-
-    #midiafooter {
-        color: #f3f3f2;
-        font-size: 2rem;
-        padding-left: 10px;
-    }
-
-    #midiafooter:hover {
-        color: #090907;
-        font-size: 2rem;
-        padding-left: 10px;
-    }
-
-    .horario {
-        max-width: 100%;
-        text-align: center;
-        color: #ffffff;
-    }
-
-    .header {
-        max-width: 100%;
-        width: 100%;
-        background-color: black;
-        display: flex;
-        flex-direction: column;
-    }
-
-
-    .idiomas {
-        display: flex;
-        margin: 0 auto;
-        padding: 2% auto;
-    }
-
-    .idiomas a {
-        padding-left: 10px;
-    }
-
-    .idiomas a:hover {
-        transform: scale(1.5);
-        -webkit-transform: scale(1.5);
-        -moz-transform: scale(1.5);
-        -ms-transform: scale(1.5);
-        -o-transform: scale(1.5);
-    }
-
-    .contato {
-        display: block;
-        text-align: center;
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    .contato a {
-        text-align: center;
-        color: #FCD900;
-        text-decoration: none;
-        font-size: 1rem;
-        padding: 5px 0;
-
-    }
-
-    .contato a:hover {
-        color: white;
-        text-decoration: underline;
-    }
-
-    .midiasSociais {
+        justify-content: space-around;
+        max-width: 250px;
         margin: 0 auto;
         padding: 2%;
-        padding-left: 10px;
     }
-
-    #midia {
-        color: #FCD900;
-        font-size: 2rem;
-        padding-left: 10px;
-    }
-
-    #midia:hover {
-        color: white;
-        font-size: 2rem;
+    
+    .idiomas a:hover {
         transform: scale(1.5);
-        -webkit-transform: scale(1.5);
-        -moz-transform: scale(1.5);
-        -ms-transform: scale(1.5);
-        -o-transform: scale(1.5);
     }
-
-
-    /* menu fixo */
-
-    .banner {
-        font-size: 1rem;
-        color: #FCD900;
+    
+    .contato {
         display: flex;
-        margin: 0 2%;
-        padding: 3%;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+        align-self: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .contato a {
+        text-align: center;
+        color: var(--text-color-optional);
+        text-decoration: none;
+        font-size: var(--title-font-size);
+        padding: 2%;
+    }
+    
+    .contato a:hover {
+        color: var(--text-color-optional);
+    
+    }
+    
+    .midiasSociais {
+        display: flex;
+        flex-direction: row;
         justify-content: space-around;
+        max-width: 300px;
+        margin: 0 auto;
+        padding: 2%;
     }
-
-    nav {
-        background: #666;
+    
+    #midia {
+        color: var(--text-color-titles);
+        font-size: var(--title-font-size);
+    
     }
-
+    
+    #midia:hover {
+        color: var(--text-color-optional);
+        transform: scale(1.5);
+    }
+    /* Creating a banner that is fixed to the top of the page. */
+    
+    .banner {
+        font-size: 28px;
+        color: var(--text-color-paragraph);
+        display: flex;
+        margin: 0 auto;
+        padding: 20px;
+        align-items: center;
+        justify-content: center;    
+        background-color: var(--text-color-titles);
+    }
+    .banner h1 {
+        font-family: 'Raleway-Regular';
+        padding-left: 20px;
+    }
+    
+    .banner button {
+        width: 15px;
+        height: 15px;
+        cursor: pointer;
+    }
+    
     .banner img {
-        background-color: #fcca00;
-        width: 100px;
-        border: solid 5px #ffffff;
+        background-color: #666;
+        width: 150px;
+        border: solid 5px var(--bg-color-titles);
     }
-
-    /* menu modal */
+    /*Side bar*/
+    
     .menuModal {
         position: fixed;
         top: 0;
         left: 0;
         display: none;
         list-style: none;
-        background: rgb(252, 202, 0);
-        background: linear-gradient(180deg, rgba(252, 202, 0, 1) 0%, rgba(237, 255, 1, 1) 30%, rgba(160, 161, 161, 1) 100%);
-        min-width: 100%;
+        background-color: rgba(95, 95, 95, 0.541);
+        backdrop-filter: blur(150px);
+        width: 40%;
         text-align: center;
         height: 100%;
         z-index: 1000;
+    
     }
-
+    
     .menuModal li {
-        display: block;
+        letter-spacing: 10px;
+        display: flex;
         align-items: center;
         text-align: center;
-        margin: 0 auto;
-
+        margin: 0 100px;
+        padding-top: 20px;
     }
-
+    
     .menuModal a {
-        display: block;
         font-weight: bold;
         text-decoration: solid;
-        color: #f3f3f3;
+        color: var(--text-color-titles);
         text-decoration: none;
         font-size: 1.5rem;
         padding-top: 15px;
     }
-
+    
     .menuModal a:hover {
-        color: #858274;
-        background-color: #FCD900;
-
+        color: var(--text-color-paragraph);
     }
-
+    
     #btn-open {
         position: absolute;
-        left: 50px;
-        top: 50px;
-        scale: 2;
+        left: 30px;
+        top: 30px;
+        scale: 3;
         width: 20px;
-        color: rgb(0, 0, 0);
-        background-color: #fdfdff;
+        color: var(--text-color-optional);
+        background-color: var(--bg-color-titles);
         border: none;
         cursor: pointer;
         justify-content: center;
     }
-
+    
     #btn-close {
         position: fixed;
         left: 30px;
         top: 30px;
         width: 20px;
-        color: rgb(0, 0, 0);
-        background-color: #fdfdff;
+        color: var(--text-color-optional);
+        background-color: var(--bg-color-titles);
         border: none;
         cursor: pointer;
         justify-content: center;
         scale: 0;
         z-index: 1001;
     }
-
-    /* produtos */
-    .h1produtos {
-        text-align: center;
-        font-size: 2rem;
-        padding: 5%;
-    }
-
+    /*  */
     .h1galeria {
         margin: 5px auto;
-        color: black;
-        font-family: poppins;
+        color: rgb(252, 217, 0);
         text-align: center;
-        padding-top: 5px;
+        font-family: 'Raleway-Regular';
         font-size: 2.5rem;
-        background-color: rgb(255, 198, 40);
+        background-color: #ccc;
         justify-content: center;
-        text-shadow: none;
-
+        text-shadow: 0 0 15px rgba(255, 255, 255, .5), 0 0 10px rgba(255, 255, 255, .5), 10px 4px 3px #090707;
     }
-
+    /*  */
     .carousel {
-        background-color: rgb(255, 198, 40);
+        background-color: var(--text-color-optional);
         padding-bottom: 20px;
-        max-width: 100%;
+        font-size: var(--title-font-size);
+        text-align: center;
+        color: var(--text-color-paragraph);
     }
-
-}
+    /*  */
+    .produtos {
+        background-color: var(--bg-color-titles);
+    }
+    
+    .produtos h1 {
+        font-size: 3rem;
+        margin: auto;
+        color: var(--text-color-titles);
+        text-align: center;
+        justify-content: center;
+        padding: 20px;
+    }
+    
+    .container-produtos {
+        display: flex;
+        justify-content: center;
+        width: 98%;
+        margin: 0 auto;
+        gap: 1%;
+    
+    }
+    
+    .container-produtos img {
+        width: 100%;
+        height: 50%;
+        margin: 0 auto;
+        gap: 1%;
+    }
+    
+    .caldeiras,
+    .gruas,
+    .maquinascabos,
+    .maquinastecidos {
+        width: 23%;
+        text-align: center;
+    }
+    
+    .caldeiras a ,
+    .gruas a ,
+    .maquinascabos a ,
+    .maquinastecidos a {
+        text-decoration: none;
+        color: var(--text-color-optional);
+        font-size: var(--paragraph-font-size);
+    }
+    
+    /* Serviços */
+    
+    .container-serviços {
+        background-color: var(--text-color-titles)
+    
+    }
+    .servicos {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .container-serviços {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: auto;
+        padding-bottom: 90px;
+        margin: auto;
+    }
+    
+    .serviçoh1 {
+        text-decoration: none;
+        font-size: 3rem;
+        color: white;
+        text-align: center;
+        margin: 30px auto;
+    }
+    
+    .reformas,
+    .laudos,
+    .rotores,
+    .montagens {
+        color: white;
+        width: 25%;
+    }
+    
+    .reformas a,
+    .laudos a,
+    .rotores a,
+    .montagens a {
+        text-decoration: none;
+        color: white;
+        text-align: center;
+        font-size: var(--paragraph-font-size);
+    }
+    
+    /* Sobre */
+    
+    .sobre {
+        padding-bottom: 50px;
+        background-color: var(--bg-color-titles);
+        text-align: justify;
+    }
+    
+    .sobre h1 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        border-bottom: 5px solid var(--text-color-paragraph);
+        font-size: 3rem;
+        text-align: center;
+        color: var(--text-color-optional);
+    }
+    
+    .sobre p {
+        margin: 0 auto;
+        text-align: justify;
+        word-wrap: break-word;
+        color: #FFFFFF;
+        padding-top: 30px;
+        font-size: 2rem;
+        width: 80%;
+    }
+    
+    /* BLOG */
+    
+    .blog h1 {
+        font-size: 3rem;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    
+    .container-blog {
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1%;
+        width: 100%;
+    }
+    
+    .post1,
+    .post2,
+    .post3 {
+        color: var(--text-color-optional);
+        word-wrap: break-word;
+        width: 28%;
+        font-size: 1.5rem;
+        background-color: var(--bg-color-titles)cf;
+        margin: 2%;
+        padding: 5px;
+    }
+    
+    .post1 h3,
+    p,
+    .post2 h3,
+    p,
+    .post3 h3,
+    p {
+        margin-top: 3%;
+    }
+    
+    .post1 img {
+    
+        width: 100%;
+        height: 150px;
+    }
+    
+    .post2 img {
+        width: 100%;
+        height: 150px;
+    }
+    
+    .post3 img {
+        width: 100%;
+        height: 150px;
+    }
+    
+    /* Footer categorias */
+    footer {
+        margin: 0 auto;
+        margin-top: 60px;
+        background-color: var(--bg-color-titles);
+    }
+    
+    .container-categorias {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+    
+    }
+    
+    .container-categorias li {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        word-break: keep-all;
+    
+    
+    }
+    
+    .container-categorias a {
+    
+        font-size: 1.5rem;
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+    
+    .container-categorias a:hover {
+        color: #FCD900;
+        text-decoration: none;
+    }
+    
+    .categ1,
+    .categ2,
+    .categ3 {
+        width: 30%;
+    
+    }
+    
+    .h1footer {
+        padding-top: 60px;
+        padding-bottom: 30px;
+        text-align: center;
+        font-size: 3rem;
+        color: #FCD900;
+    }
+    
+    .servicosfooter {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+    
+    .servicosfooter li {
+        padding: 10px;
+        padding-bottom: 20px;
+        text-align: center;
+        word-break: break-all;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+    
+    .servicosfooter a {
+        color: #FFFFFF;
+        text-decoration: none;
+        font-size: 1.5rem;
+        margin: auto;
+    }
+    
+    .servicosfooter a:hover {
+        color: #FCD900;
+        text-decoration: none;
+    }
+    
+    .svs1,
+    .svs2 {
+        justify-content: center;
+        margin: 0 auto;
+        text-align: center;
+        width: 48%;
+    
+    }
+    
+    /* container contatos footer */
+    
+    .container-contatos {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: center;
+    
+    }
+    
+    .container-contatos p {
+        margin-bottom: 10px;
+    }
+    
+    .contato li a,
+    p {
+        color: var(--text-color-optional);
+        font-size: 1.5rem;
+    }
+    
+    #midiafooter {
+        color: #fafafa;
+        font-size: 2rem;
+        padding-left: 10px;
+    }
+    
+    #midiafooter:hover {
+        color: #090907;
+        font-size: 2rem;
+        padding-left: 10px;
+    }
+    
+    .horario {
+        text-align: center;
+        font-size: 3rem;
+        color: #FCD900;
+    }
+    
+    /* responsivo */
+    
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 600px) {
+    
+        .header {
+            max-width: 100%;
+            width: 100%;
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+        }
+    
+    
+        .idiomas {
+            display: flex;
+            margin: 0 auto;
+            padding: 2% auto;
+        }
+    
+        .idiomas a {
+            padding-left: 10px;
+        }
+    
+        .idiomas a:hover {
+            transform: scale(1.5);
+            -webkit-transform: scale(1.5);
+            -moz-transform: scale(1.5);
+            -ms-transform: scale(1.5);
+            -o-transform: scale(1.5);
+        }
+    
+        .contato {
+            display: block;
+            text-align: center;
+            width: 100%;
+            margin: 0 auto;
+        }
+    
+        .contato a {
+            text-align: center;
+            color: #FCD900;
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 5px 0;
+    
+        }
+    
+        .contato a:hover {
+            color: var(--text-color-optional);
+            text-decoration: underline;
+        }
+    
+        .midiasSociais {
+            margin: 0 auto;
+            padding: 2%;
+            padding-left: 10px;
+        }
+    
+        #midia {
+            color: #FCD900;
+            font-size: 2rem;
+            padding-left: 10px;
+        }
+    
+        #midia:hover {
+            color: var(--text-color-optional);
+            font-size: 2rem;
+            transform: scale(1.5);
+            -webkit-transform: scale(1.5);
+            -moz-transform: scale(1.5);
+            -ms-transform: scale(1.5);
+            -o-transform: scale(1.5);
+        }
+    
+    
+        /* menu fixo */
+    
+        .banner {
+            font-size: 1rem;
+            color: #FCD900;
+            display: flex;
+            margin: 0 2%;
+            padding: 3%;
+            justify-content: space-around;
+        }
+    
+        nav {
+            background: #666;
+        }
+    
+        .banner img {
+            background-color: #fcca00;
+            width: 100px;
+            border: solid 5px #ffffff;
+        }
+    
+        /* menu modal */
+        .menuModal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: none;
+            list-style: none;
+            background: rgb(252, 202, 0);
+            background: linear-gradient(180deg, rgba(252, 202, 0, 1) 0%, rgba(237, 255, 1, 1) 30%, rgba(160, 161, 161, 1) 100%);
+            min-width: 100%;
+            text-align: center;
+            height: 100%;
+            z-index: 1000;
+    
+        }
+    
+        .menuModal li {
+            display: block;
+            align-items: center;
+            text-align: center;
+            margin: 0 auto;
+    
+        }
+    
+        .menuModal a {
+            display: block;
+            font-weight: bold;
+            text-decoration: solid;
+            color: #f3f3f3;
+            text-decoration: none;
+            font-size: 1.5rem;
+            padding-top: 15px;
+        }
+    
+        .menuModal a:hover {
+            color: #858274;
+            background-color: #FCD900;
+    
+        }
+    
+        #btn-open {
+            position: absolute;
+            left: 50px;
+            top: 50px;
+            scale: 2;
+            width: 20px;
+            color: rgb(0, 0, 0);
+            background-color: #fdfdff;
+            border: none;
+            cursor: pointer;
+            justify-content: center;
+        }
+    
+        #btn-close {
+            position: fixed;
+            left: 30px;
+            top: 30px;
+            width: 20px;
+            color: rgb(0, 0, 0);
+            background-color: #fdfdff;
+            border: none;
+            cursor: pointer;
+            justify-content: center;
+            scale: 0;
+            z-index: 1001;
+        }
+    
+        /* produtos */
+        .h1produtos {
+            text-align: center;
+            font-size: 2rem;
+            padding: 5%;
+        }
+    
+        .h1galeria {
+            margin: 5px auto;
+            color: black;
+            font-family: poppins;
+            text-align: center;
+            padding-top: 5px;
+            font-size: 2.5rem;
+            background-color: rgb(255, 198, 40);
+            justify-content: center;
+            text-shadow: none;
+    
+        }
+    
+        .carousel {
+            background-color: rgb(255, 198, 40);
+            padding-bottom: 20px;
+            max-width: 100%;
+        }
+    
+        .h1produtos {
+            margin: 5px auto;
+            color: #FCD900;
+            text-align: center;
+            justify-content: center;
+            background: #000;
+            letter-spacing: 10px;
+            max-width: 100%;
+        }
+    
+        .container-produtos {
+            display: block;
+            justify-content: center;
+            width: 100%;
+            max-width: 100%;
+            margin: 5px auto;
+            gap: 1%;
+        }
+    
+        .container-produtos img {
+            width: 100%;
+            height: 270px;
+            margin: 0 auto;
+            gap: 1%;
+    
+        }
+    
+        .caldeiras,
+        .gruas,
+        .maquinascabos,
+        .maquinastecidos {
+            height: auto;
+            width: 100%;
+            max-width: 100%;
+            background-color: #000000;
+    
+        }
+    
+        .caldeiras a,
+        .gruas a,
+        .maquinascabos a,
+        .maquinastecidos a {
+            color: #FCD900;
+            text-decoration: none;
+            text-align: center;
+            font-size: 1rem;
+            padding: 20px;
+        }
+    
+        /* Serviços */
+    
+        .container-serviços {
+    
+            background-color: #ececec94;
+            margin-top: 30px;
+            display: block;
+            max-width: 100%;
+        }
+    
+        .servicos {
+            gap: 15px;
+            display: block;
+            width: 100%;
+            max-width: 100%;
+        }
+    
+        .serviços h1 {
+            letter-spacing: 15px;
+            color: rgb(11, 4, 4);
+            font-size: 3rem;
+            padding: 5%;
+            text-align: center;
+        }
+    
+        .container-serviços {
+            display: block;
+            gap: 1%;
+            height: auto;
+            padding-bottom: 90px;
+        }
+    
+        .reformas,
+        .laudos,
+        .rotores,
+        .montagens {
+            width: 100%;
+            max-width: 100%;
+            padding-bottom: 50px;
+        }
+    
+        .reformas a,
+        .laudos a,
+        .rotores a,
+        .montagens a {
+            padding-bottom: 20px;
+            text-decoration: none;
+            color: black;
+            text-align: center;
+            font-size: 1rem;
+        }
+    
+    
+        /* Sobre */
+    
+        .sobre {
+            padding-bottom: 50px;
+            background-color: #FCD900;
+            text-align: justify;
+        }
+    
+        .sobre h1 {
+            letter-spacing: 15px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            border-bottom: 5px solid var(--text-color-optional);
+            font-size: 2rem;
+            text-align: center;
+            color: var(--bg-color-titles);
+        }
+    
+        .sobre p {
+            margin: 3% auto;
+            text-align: justify;
+            color: var(--bg-color-titles);
+            padding-top: 30px;
+            font-size: var(--paragraph-font-size);
+            max-width: 70%;
+        }
+    
+        /* BLOG */
+    
+        .blog h1 {
+            letter-spacing: 15px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            border-bottom: 5px solid var(--text-color-optional);
+            font-size: 2rem;
+            text-align: center;
+            color: var(--bg-color-titles);
+        }
+    
+        .container-blog {
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 100%;
+        }
+    
+        .post1,
+        .post2,
+        .post3 {
+            color: var(--text-color-optional);
+            width: 100%;
+            font-size: 1rem;
+            background-color: #070604;
+            margin: 2% auto;
+            padding: 5px;
+        }
+    
+        .post1 h3,
+        .post2 h3,
+        .post3 h3 {
+            font-size: 1.5rem;
+        }
+    
+        .post1 p,
+        .post2 p,
+        .post3 p {
+            font-size: 1rem;
+            margin-top: 5%;
+        }
+    
+        .post1 img {
+    
+            width: 100%;
+            height: 200px;
+        }
+    
+        .post2 img {
+            width: 100%;
+            height: 200px;
+        }
+    
+        .post3 img {
+            width: 100%;
+            height: 200px;
+        }
+    
+        /* Footer categorias */
+        footer {
+            margin: 0 auto;
+            margin-top: 60px;
+            background-color: #fcca00;
+        }
+    
+        .container-categorias {
+            display: block;
+            width: 100%;
+        }
+    
+        .container-categorias li {
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+            word-break: keep-all;
+    
+    
+        }
+    
+        .container-categorias a {
+    
+            font-size: 1rem;
+            color: #000000;
+            text-decoration: none;
+        }
+    
+        .container-categorias a:hover {
+            color: #fbfaf3;
+            text-decoration: none;
+        }
+    
+        .categ1,
+        .categ2,
+        .categ3 {
+            width: 100%;
+        }
+    
+        .h1footer {
+            letter-spacing: 15px;
+            padding-top: 60px;
+            padding-bottom: 30px;
+            text-align: center;
+            font-size: 3rem;
+            color: #000000;
+        }
+    
+        .servicosfooter {
+            margin: 0 auto;
+            display: block;
+            max-width: 100%;
+        }
+    
+        .servicosfooter li {
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+    
+        }
+    
+        .servicosfooter a {
+            color: #000000;
+            text-decoration: none;
+            font-size: 1rem;
+            margin: 0 auto;
+        }
+    
+        .servicosfooter a:hover {
+            color: #ffffff;
+            text-decoration: none;
+        }
+    
+        .svs1,
+        .svs2 {
+            margin: 0 auto;
+            text-align: center;
+            width: 100%;
+    
+        }
+    
+        /* container contatos footer */
+    
+        .container-contatos {
+            display: block;
+            text-align: center;
+            max-width: 100%
+        }
+    
+        .contato h4,
+        a,
+        p {
+            color: var(--text-color-optional);
+            font-size: 1.5rem;
+        }
+    
+        .h1footer h1 {
+            margin: 0 auto;
+            max-width: 100%;
+            text-align: center;
+        }
+    
+        #midiafooter {
+            color: #f3f3f2;
+            font-size: 2rem;
+            padding-left: 10px;
+        }
+    
+        #midiafooter:hover {
+            color: #090907;
+            font-size: 2rem;
+            padding-left: 10px;
+        }
+    
+        .horario {
+            max-width: 100%;
+            text-align: center;
+            color: #ffffff;
+        }
+    }
+    
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 601px) and (max-width:800px) {
+        .container-produtos {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            max-width: 100%;
+        }
+    
+    
+        .caldeiras,
+        .gruas,
+        .maquinascabos,
+        .maquinastecidos {
+    
+            height: auto;
+            width: 47%;
+            max-width: 50%;
+        }
+    
+        /* SERVIÇOS */
+    
+        .container-serviços {
+    
+            background-color: #ececec94;
+            margin-top: 30px;
+            display: block;
+            max-width: 100%;
+        }
+    
+        .servicos {
+            gap: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            max-width: 100%;
+        }
+    
+        .serviços h1 {
+            letter-spacing: 15px;
+            color: rgb(11, 4, 4);
+            font-size: 3rem;
+            padding: 5%;
+            text-align: center;
+        }
+    
+        .reformas,
+        .laudos,
+        .rotores,
+        .montagens {
+            width: 48%;
+            max-width: 100%;
+            padding-bottom: 50px;
+        }
+    
+        .reformas a,
+        .laudos a,
+        .rotores a,
+        .montagens a {
+            padding-bottom: 20px;
+            text-decoration: none;
+            color: black;
+            text-align: center;
+            font-size: 1rem;
+        }
+    
+        /* Sobre */
+    
+        .sobre {
+            padding-bottom: 50px;
+            background-color: #FCD900;
+            text-align: justify;
+        }
+    
+        .sobre h1 {
+            letter-spacing: 15px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            border-bottom: 5px solid var(--text-color-optional);
+            font-size: 2rem;
+            text-align: center;
+            color: var(--bg-color-titles);
+        }
+    
+        .sobre p {
+            margin: 3% auto;
+            text-align: justify;
+            color: var(--bg-color-titles);
+            padding-top: 30px;
+            font-size: var(--paragraph-font-size);
+            max-width: 70%;
+        }
+    
+        /* BLOG */
+    
+        .blog h1 {
+            letter-spacing: 15px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            border-bottom: 5px solid var(--text-color-optional);
+            font-size: 2rem;
+            text-align: center;
+            color: var(--bg-color-titles);
+        }
+    
+        .container-blog {
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 100%;
+        }
+    
+        .post1,
+        .post2,
+        .post3 {
+            color: var(--text-color-optional);
+            width: 45%;
+            font-size: 1rem;
+            background-color: #070604;
+            margin: 2% auto;
+            padding: 5px;
+        }
+    
+        .post1 h3,
+        .post2 h3,
+        .post3 h3 {
+            font-size: 1.5rem;
+        }
+    
+        .post1 p,
+        .post2 p,
+        .post3 p {
+            font-size: 1rem;
+            margin-top: 5%;
+        }
+    
+        .post1 img {
+    
+            width: 100%;
+            height: 200px;
+        }
+    
+        .post2 img {
+            width: 100%;
+            height: 200px;
+        }
+    
+        .post3 img {
+            width: 100%;
+            height: 200px;
+        }
+    
+        /* Footer categorias */
+        footer {
+            margin: 0 auto;
+            margin-top: 60px;
+            background-color: #fcca00;
+        }
+    
+        .container-categorias {
+            display: block;
+            width: 100%;
+        }
+    
+        .container-categorias li {
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+            word-break: keep-all;
+    
+    
+        }
+    
+        .container-categorias a {
+    
+            font-size: 1rem;
+            color: #000000;
+            text-decoration: none;
+        }
+    
+        .container-categorias a:hover {
+            color: #fbfaf3;
+            text-decoration: none;
+        }
+    
+        .categ1,
+        .categ2,
+        .categ3 {
+            width: 100%;
+        }
+    
+        .h1footer {
+            letter-spacing: 15px;
+            padding-top: 60px;
+            padding-bottom: 30px;
+            text-align: center;
+            font-size: 3rem;
+            color: #000000;
+        }
+    
+        .servicosfooter {
+            margin: 0 auto;
+            display: block;
+            max-width: 100%;
+        }
+    
+        .servicosfooter li {
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+    
+        }
+    
+        .servicosfooter a {
+            color: #000000;
+            text-decoration: none;
+            font-size: 1rem;
+            margin: 0 auto;
+        }
+    
+        .servicosfooter a:hover {
+            color: #ffffff;
+            text-decoration: none;
+        }
+    
+        .svs1,
+        .svs2 {
+            margin: 0 auto;
+            text-align: center;
+            width: 100%;
+    
+        }
+    
+        /* container contatos footer */
+    
+        .container-contatos {
+            display: block;
+            text-align: center;
+            max-width: 100%
+        }
+    
+        .contato h4,
+        a,
+        p {
+            color: var(--text-color-optional);
+            font-size: 1.5rem;
+        }
+    
+        .h1footer h1 {
+            margin: 0 auto;
+            max-width: 100%;
+            text-align: center;
+        }
+    
+        #midiafooter {
+            color: #f3f3f2;
+            font-size: 2rem;
+            padding-left: 10px;
+        }
+    
+        #midiafooter:hover {
+            color: #090907;
+            font-size: 2rem;
+            padding-left: 10px;
+        }
+    
+        .horario {
+            max-width: 100%;
+            text-align: center;
+            color: #ffffff;
+        }
+    
+        .header {
+            max-width: 100%;
+            width: 100%;
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+        }
+    
+    
+        .idiomas {
+            display: flex;
+            margin: 0 auto;
+            padding: 2% auto;
+        }
+    
+        .idiomas a {
+            padding-left: 10px;
+        }
+    
+        .idiomas a:hover {
+            transform: scale(1.5);
+            -webkit-transform: scale(1.5);
+            -moz-transform: scale(1.5);
+            -ms-transform: scale(1.5);
+            -o-transform: scale(1.5);
+        }
+    
+        .contato {
+            display: block;
+            text-align: center;
+            width: 100%;
+            margin: 0 auto;
+        }
+    
+        .contato a {
+            text-align: center;
+            color: #FCD900;
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 5px 0;
+    
+        }
+    
+        .contato a:hover {
+            color: var(--text-color-optional);
+            text-decoration: underline;
+        }
+    
+        .midiasSociais {
+            margin: 0 auto;
+            padding: 2%;
+            padding-left: 10px;
+        }
+    
+        #midia {
+            color: #FCD900;
+            font-size: 2rem;
+            padding-left: 10px;
+        }
+    
+        #midia:hover {
+            color: var(--text-color-optional);
+            font-size: 2rem;
+            transform: scale(1.5);
+            -webkit-transform: scale(1.5);
+            -moz-transform: scale(1.5);
+            -ms-transform: scale(1.5);
+            -o-transform: scale(1.5);
+        }
+    
+    
+        /* menu fixo */
+    
+        .banner {
+            font-size: 1rem;
+            color: #FCD900;
+            display: flex;
+            margin: 0 2%;
+            padding: 3%;
+            justify-content: space-around;
+        }
+    
+        nav {
+            background: #666;
+        }
+    
+        .banner img {
+            background-color: #fcca00;
+            width: 100px;
+            border: solid 5px #ffffff;
+        }
+    
+        /* menu modal */
+        .menuModal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: none;
+            list-style: none;
+            background: rgb(252, 202, 0);
+            background: linear-gradient(180deg, rgba(252, 202, 0, 1) 0%, rgba(237, 255, 1, 1) 30%, rgba(160, 161, 161, 1) 100%);
+            min-width: 100%;
+            text-align: center;
+            height: 100%;
+            z-index: 1000;
+        }
+    
+        .menuModal li {
+            display: block;
+            align-items: center;
+            text-align: center;
+            margin: 0 auto;
+    
+        }
+    
+        .menuModal a {
+            display: block;
+            font-weight: bold;
+            text-decoration: solid;
+            color: #f3f3f3;
+            text-decoration: none;
+            font-size: 1.5rem;
+            padding-top: 15px;
+        }
+    
+        .menuModal a:hover {
+            color: #858274;
+            background-color: #FCD900;
+    
+        }
+    
+        #btn-open {
+            position: absolute;
+            left: 50px;
+            top: 50px;
+            scale: 2;
+            width: 20px;
+            color: rgb(0, 0, 0);
+            background-color: #fdfdff;
+            border: none;
+            cursor: pointer;
+            justify-content: center;
+        }
+    
+        #btn-close {
+            position: fixed;
+            left: 30px;
+            top: 30px;
+            width: 20px;
+            color: rgb(0, 0, 0);
+            background-color: #fdfdff;
+            border: none;
+            cursor: pointer;
+            justify-content: center;
+            scale: 0;
+            z-index: 1001;
+        }
+    
+        /* produtos */
+        .h1produtos {
+            text-align: center;
+            font-size: 2rem;
+            padding: 5%;
+        }
+    
+        .h1galeria {
+            margin: 5px auto;
+            color: black;
+            font-family: poppins;
+            text-align: center;
+            padding-top: 5px;
+            font-size: 2.5rem;
+            background-color: rgb(255, 198, 40);
+            justify-content: center;
+            text-shadow: none;
+    
+        }
+    
+        .carousel {
+            background-color: rgb(255, 198, 40);
+            padding-bottom: 20px;
+            max-width: 100%;
+        }
+    
+    }
