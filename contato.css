@@ -1,0 +1,59 @@
+:root {
+    /* Defining the CSS variables. */
+    --text-color-titles: #040C17;
+    --text-color-paragraph: #3D494F;
+    --bg-color-paragraph: #E8C40F;
+    --bg-color-titles: #F6B741;
+    --text-color-optional: #14263D;
+    --bg-color-optional: #E8C40F;
+
+    /* Defining two CSS variables. */
+    --title-font-size: 24px;
+    --paragraph-font-size: 18px;
+}
+
+main {
+    height: 500px;
+    background-color: var(--text-color-titles);
+}
+.formularioContato h1 {
+    color: #3D494F;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+textarea {
+    resize: vertical;
+}
+form {
+    color: var(--bg-color-titles);
+    font-size: 1.5rem;    
+    text-align: center;
+    margin-top: 30px;
+    margin: 0 auto;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+}
+
+button {
+    background: var(--bg-color-titles);
+    border: none;
+    border-bottom: 5px solid var(--bg-color-optional);
+    font-size: 1.5rem;
+    margin: 20px auto;
+    text-align: center;
+    border-radius: 5%;
+    width: 200px;
+    height: 50px;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    -o-border-radius: 5%;
+}
+
+button:hover {
+    background: #E8C40F;
+    transition-duration: 0.5s;
+}

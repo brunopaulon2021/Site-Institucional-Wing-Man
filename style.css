@@ -620,7 +620,9 @@ footer h2 {
     .caldeiras,
     .gruas,
     .maquinascabos,
-    .maquinastecidos {
+    .maquinastecidos,
+    .emBreve
+     {
         width: 98%;
         text-align: center;
     }
@@ -628,7 +630,8 @@ footer h2 {
     .caldeiras a,
     .gruas a,
     .maquinascabos a,
-    .maquinastecidos a {
+    .maquinastecidos a, 
+    .emBreve a{
         font-size: 20px;
     }
 
