@@ -554,514 +554,170 @@ footer h2 {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-   /* The CSS code for the header. */
+    /* The CSS code for the header. */
 
-header img {
-    width: 30px;
-}
+    header img {
+        width: 30px;
+    }
 
-.header {
-    width: 100%;
-    background-color: var(--bg-color-titles);
-    display: flexbox;
-    flex-direction: column;
-}
+    .header {
+        width: 100%;
+        display: flexbox;
+        flex-direction: column;
+    }
 
-.idiomas {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    max-width: 250px;
-    margin: 0 auto;
-    padding: 2%;
-}
+    .contato {
+        display: flex;
+        flex-direction: column;
+    }
 
-.idiomas a:hover {
-    transform: scale(1.5);
-}
+    .contato a {
+        font-size: medium;
+    }
 
-.contato {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    align-content: center;
-    align-self: center;
-    width: 100%;
-    margin: 0 auto;
-}
 
-.contato a {
-    text-align: center;
-    color: var(--text-color-optional);
-    text-decoration: none;
-    font-size: var(--title-font-size);
-    padding: 2%;
-}
+    /* Creating a banner that is fixed to the top of the page. */
 
-.contato a:hover {
-    color: white;
-    text-decoration: underline;
+    .banner {
+        font-size: small;
+    }
 
-}
+    .banner h1 {
+        font-family: 'Raleway-Regular';
+        padding-left: 20px;
+    }
 
-.midiasSociais {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    max-width: 300px;
-    margin: 0 auto;
-    padding: 2%;
-}
+    .banner img {
+        width: 100px;
+    }
 
-#midia {
-    color: var(--text-color-titles);
-    font-size: var(--title-font-size);
-
-}
-
-#midia:hover {
-    color: var(--text-color-optional);
-    transform: scale(1.5);
-}
-
-/* Creating a banner that is fixed to the top of the page. */
-
-.banner {
-    font-size: 20px;
-    color: var(--text-color-paragraph);
-    display: flex;
-    margin: 0 auto;
-    padding: 20px;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--text-color-titles);
-}
-
-.banner h1 {
-    font-family: 'Raleway-Regular';
-    padding-left: 20px;
-}
-
-.banner button {
-    width: 15px;
-    height: 15px;
-    cursor: pointer;
-}
-
-.banner img {
-    background-color: #666;
-    width: 150px;
-    border: solid 5px var(--bg-color-titles);
-}
-
-/* The above code is creating a menu that is hidden by default. When the user clicks on the button,
+    /* The above code is creating a menu that is hidden by default. When the user clicks on the button,
     the menu will appear. */
 
-.menuModal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: none;
-    list-style: none;
-    background-color: rgba(95, 95, 95, 0.541);
-    backdrop-filter: blur(150px);
-    width: 40%;
-    text-align: center;
-    height: 100%;
-    z-index: 1000;
-
-}
-
-.menuModal li {
-    letter-spacing: 10px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    margin: 0 100px;
-    padding-top: 20px;
-}
-
-.menuModal a {
-    font-weight: bold;
-    text-decoration: solid;
-    color: var(--text-color-titles);
-    text-decoration: none;
-    font-size: var(--paragraph-font-size);
-    padding-top: 15px;
-}
-
-.menuModal a:hover {
-
-    color: var(--bg-color-titles);
-}
-
-#btn-open {
-    position: absolute;
-    left: 30px;
-    top: 30px;
-    scale: 3;
-    width: 20px;
-    color: var(--text-color-optional);
-    background-color: var(--bg-color-titles);
-    border: none;
-    cursor: pointer;
-    justify-content: center;
-}
-
-#btn-close {
-    position: fixed;
-    left: 30px;
-    top: 30px;
-    width: 20px;
-    color: var(--text-color-optional);
-    background-color: var(--bg-color-titles);
-    border: none;
-    cursor: pointer;
-    justify-content: center;
-    scale: 0;
-    z-index: 1001;
-}
-
-/* Setting the background color of the carousel to the text-color-optional variable, which is set to
-#ccc. */
-.h1galeria {
-    margin: 5px auto;
-    color: rgb(252, 217, 0);
-    text-align: center;
-    font-family: 'Raleway-Regular';
-    font-size: 2.5rem;
-    background-color: #ccc;
-    justify-content: center;
-    text-shadow: 0 0 15px rgba(255, 255, 255, .5), 0 0 10px rgba(255, 255, 255, .5), 10px 4px 3px #090707;
-}
-
-.carousel {
-    background-color: var(--text-color-optional);
-    padding-bottom: 20px;
-    font-size: var(--title-font-size);
-    text-align: center;
-    color: var(--text-color-paragraph);
-}
-
-/* Creating a container for the products and the images. */
-
-.produtos {
-    background-color: var(--bg-color-titles);
-}
-
-.produtos h1 {
-    font-size: 3rem;
-    margin: auto;
-    color: var(--text-color-titles);
-    text-align: center;
-    justify-content: center;
-    padding: 20px;
-}
-
-.container-produtos {
-    display: flex;
-    justify-content: center;
-    width: 98%;
-    margin: 0 auto;
-    gap: 1%;
-
-}
-
-.container-produtos img {
-    width: 100%;
-    height: 50%;
-    margin: 0 auto;
-    gap: 1%;
-}
-
-.caldeiras,
-.gruas,
-.maquinascabos,
-.maquinastecidos {
-    width: 23%;
-    text-align: center;
-}
-
-.caldeiras a,
-.gruas a,
-.maquinascabos a,
-.maquinastecidos a {
-    text-decoration: none;
-    color: var(--text-color-optional);
-    font-size: var(--paragraph-font-size);
-}
-
-/* Creating a container for the services section. */
-
-.container-serviços {
-    background-color: var(--text-color-titles)
-}
-
-.servicos {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-    justify-content: center;
-}
-
-.container-serviços {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: auto;
-    padding-bottom: 90px;
-    margin: auto;
-}
-
-.serviçoh1 {
-    text-decoration: none;
-    font-size: 3rem;
-    color: white;
-    text-align: center;
-    margin: 30px auto;
-}
-
-.reformas,
-.laudos,
-.rotores,
-.montagens {
-    color: white;
-    width: 25%;
-}
-
-.reformas a,
-.laudos a,
-.rotores a,
-.montagens a {
-    text-decoration: none;
-    color: white;
-    text-align: center;
-    font-size: var(--paragraph-font-size);
-}
-
-/* The CSS code for the "About" section. */
-
-.sobre {
-    padding-bottom: 50px;
-    background-color: var(--bg-color-titles);
-    text-align: justify;
-}
-
-.sobre h1 {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    font-size: 3rem;
-    text-align: center;
-    color: var(--text-color-optional);
-}
-
-.sobre {
-
-    padding: 20px;
-    margin: 0 auto;
-    text-align: justify;
-    word-wrap: break-word;
-    color: var(--text-color-optional);
-    padding-top: 15px;
-    font-size: 25px;
-    max-width: 100%;
-
-}
-
-/* The above code is creating a blog page with 3 posts. */
-
-.blog h1 {
-    color: #F6B741;
-    font-size: 3rem;
-    text-align: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    background: var(--text-color-titles);
-}
-
-.container-blog {
-    background-color: var(--bg-color-titles);
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1%;
-    width: 100%;
-}
-
-.post1,
-.post2,
-.post3 {
-    color: var(--text-color-optional);
-    word-wrap: break-word;
-    width: 28%;
-    font-size: 1.5rem;
-    background-color: var(--bg-color-titles)cf;
-    margin: 2%;
-    padding: 5px;
-}
-
-.post1 h3,
-p,
-.post2 h3,
-p,
-.post3 h3,
-p {
-    margin-top: 3%;
-}
-
-.post1 img {
-
-    width: 100%;
-    height: 150px;
-}
-
-.post2 img {
-    width: 100%;
-    height: 150px;
-}
-
-.post3 img {
-    width: 100%;
-    height: 150px;
-}
-
-/* Settings footer*/
-
-footer {
-    margin: 0 auto;
-    background-color: var(--text-color-paragraph);
-}
-
-.container-categorias {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-}
-
-.container-categorias li {
-    width: 100%;
-    padding: 10px;
-    text-align: left;
-}
-
-.container-categorias a {
-    font-size: var(--paragraph-font-size);
-    color: white;
-    text-decoration: none;
-}
-
-.container-categorias a:hover {
-    color: var(--bg-color-titles);
-    text-decoration: overline underline;
-
-}
-
-.categ1,
-.categ2,
-.categ3 {
-    width: 30%;
-
-}
-
-.categ1,
-.categ2 {
-    border-right: solid;
-}
-
-.h1footer {
-    padding-top: 60px;
-    padding-bottom: 30px;
-    text-align: center;
-    font-size: 3rem;
-    color: var(--bg-color-titles);
-}
-
-.servicosfooter {
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-}
-
-.servicosfooter li {
-    padding: 10px;
-    padding-bottom: 20px;
-    text-align: left;
-    word-break: break-all;
-    justify-content: center;
-}
-
-.servicosfooter a {
-    color: #FFFFFF;
-    text-decoration: none;
-    font-size: 1.5rem;
-    margin: auto;
-}
-
-.servicosfooter a:hover {
-    color: var(--bg-color-titles);
-    text-decoration: none;
-}
-
-.svs1 {
-    border-right: solid;
-}
-
-.svs1,
-.svs2 {
-    justify-content: center;
-    margin: 0 auto;
-    text-align: center;
-    width: 48%;
-}
-
-hr {
-    margin-top: 20px;
-}
-
-/* The CSS code for the footer. */
-
-.container-contatos {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    text-align: center;
-
-}
-
-.container-contatos p {
-    margin-bottom: 10px;
-}
-
-.contato li a,
-p {
-    color: white;
-    font-size: var(--paragraph-font-size);
-}
-
-footer h2 {
-    color: white;
-    font-size: 30px;
-}
-
-#midiafooter {
-    color: white;
-    font-size: 2rem;
-    padding-left: 10px;
-}
-
-#midiafooter:hover {
-    color: #090907;
-    font-size: 2rem;
-    padding-left: 10px;
-}
-
-.horario {
-    text-align: center;
-    font-size: 3rem;
-    color: var(--bg-color-titles);
+    .menuModal {
+        width: 100%;
+    }
+
+    .menuModal li {
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    /* Creating a container for the products and the images. */
+
+    .container-produtos {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 98%;
+        margin: 0 auto;
+        gap: 1%;
+
+    }
+
+    .caldeiras,
+    .gruas,
+    .maquinascabos,
+    .maquinastecidos {
+        width: 98%;
+        text-align: center;
+    }
+
+    .caldeiras a,
+    .gruas a,
+    .maquinascabos a,
+    .maquinastecidos a {
+        font-size: 20px;
+    }
+
+    /* Creating a container for the services section. */
+    .servicos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .reformas,
+    .laudos,
+    .rotores,
+    .montagens {
+
+        padding-top: 10px;
+        width: 98%;
+    }
+
+    .reformas a,
+    .laudos a,
+    .rotores a,
+    .montagens a {
+        padding-top: 10px;
+    }
+
+
+    /* The CSS code for the "About" section. */
+    .sobre {
+        text-align: center;
+        padding-top: 10px;
+        font-size: 22px;
+    }
+
+    /* The above code is creating a blog page with 3 posts. */
+    .container-blog {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .post1,
+    .post2,
+    .post3 {
+        width: 98%;
+    }
+
+    /* Settings footer*/
+
+    .container-categorias {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .categ1,
+    .categ2,
+    .categ3 {
+        width: 98%;
+
+    }
+
+    .categ1 li,
+    .categ2 li,
+    .categ3 li
+        {
+            text-align: center;
+    }
+
+    .categ1,
+    .categ2 {
+        border: none;
+    }
+
+    .servicosfooter {
+        flex-direction: column;
+    }
+
+    .servicosfooter li {
+        text-align: center;
+    }
+
+    .servicosfooter a {
+        font-size: 20px;
+    }
+
+    .svs1 {
+        border: none;
+    }
+
+    .svs1,
+    .svs2 {
+        width: 98%;
+    }
 }
