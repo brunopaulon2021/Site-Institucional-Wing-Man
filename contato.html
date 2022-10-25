@@ -5,6 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <meta name="author" content="Bruno Paulon">
     <meta name="keywords" content="Industria, Operação, Tecnologia, Obras, Industriais,
             Máquinas, Equipamentos, infraestrutura,produtividade">
@@ -14,9 +15,8 @@
             equipamentos, bem como infraestrutura e manutenção de
             infraestrutura. Eles trabalham em Guarulhos, cidade localizada no
             estado de São Paulo.">
-    <link href="/style.css" rel="stylesheet">
+    <link href="contato.css" rel="stylesheet">
     <link rel="shortcut icon" href="/assets/imagens/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="contato.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -25,6 +25,9 @@
 
 <body>
     <header class="header">
+
+        <!-- Creating a div with the class "idiomas" and inside it, there are three links with images. -->
+
         <div class="idiomas">
             <a href="#">
                 <img src="/assets/imagens/estados-unidos.png" alt="Ícone
@@ -39,8 +42,12 @@
                         traduzir página para Inglês">
             </a>
         </div>
+
+        <!-- Creating a div with the class of contato. It is also creating a link to the contact page and a link
+to the phone number and email address. -->
+
         <div class="contato">
-            <a href="#">
+            <a href="/contato.html">
                 <h4>Fale Conosco</h4>
             </a>
             <a href="#">
@@ -55,6 +62,7 @@
                 </h4>
             </a>
         </div>
+
         <div class="midiasSociais">
             <a href="#">
                 <i id="midia" class="fa-brands fa-square-facebook"></i>
@@ -69,32 +77,57 @@
                 <i id="midia" class="fa-brands fa-linkedin"></i>
             </a>
         </div>
-        <!-- Creating a button with the id of btn-open. -->
+        <!-- Creating a menu modal. -->
 
-        <button id="btn-open">
-            <i class="fa-solid fa-bars"></i>
-        </button>
+        <aside class="sideBar">
+            <ul class="menuModal">
+                <li>
+                    <a href="/index.html">HOME</a>
+                </li>
+                <li>
+                    <a href="/empresa.html">EMPRESA</a>
+                </li>
+                <li>
+                    <a href="/produtos.html">PRODUTOS</a>
+                </li>
+                <li>
+                    <a href="/blog.html">BLOG</a>
+                </li>
+                <li>
+                    <a href="/contato.html">CONTATO</a>
+                </li>
+            </ul>
+            <!-- Creating a button with the id of btn-open. -->
 
-        <!-- Creating a button with an id of btn-close and an icon of an xmark. -->
+            <button id="btn-open">
+                <i class="fa-solid fa-bars"></i>
+            </button>
 
-        <button id="btn-close">
-            <i class="fa-solid fa-xmark"></i>
-        </button>
+            <!-- Creating a button with an id of btn-close and an icon of an xmark. -->
+
+            <button id="btn-close">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </aside>
+
     </header>
     <main>
-        <section class="formularioContato">
+        <form action="" id="form">
             <h1>FALE CONOSCO</h1>
-            <form id="form">
-                <label for="nome">NOME*</label>
-                <input type="text" name="nomes" id="nome" required maxlength="30" placeholder="Bruno">
-                <label for="">EMAIL*</label>
-                <input type="email" name="email" id="email" required maxlength="40"
-                    placeholder="Brunopaulon@mail.com.br">
-                <label for="mensagem"> MENSAGEM*</label>
-                <textarea required maxlength="150" placeholder="Deixe sua mensagem..."></textarea>
-                <button type="submit" id="btnEnviar">ENVIAR</button>
-            </form>
-        </section>
+            <label for="">NOME*</label>
+
+            <input type="text" name="name" id="nome" required maxlength="30" placeholder="Nome">
+
+            <label for="">EMAIL*</label>
+
+            <input type="email" name="mail" id="email"  required maxlength="40" placeholder="Email@email.com.br">
+
+            <label for="">MENSAGEM</label>
+            <textarea required maxlength="300" placeholder="Deixe aqui a sua mensagem !!!">
+
+            </textarea>
+            <button type="submit" class="btn-submit">Enviar</button>
+        </form>
     </main>
     <!-- Footer Start -->
     <footer class="footer">
@@ -104,11 +137,11 @@
                 <ul>
                     <li><a href="#"><i class="fa-solid fa-angles-right"></i> Caldeiras Para Geração De Vapor E
                             Energia</a></li>
-                    <li><a href="#"><i class="fa-solid fa-angles-right"></i> Máquinas Para Tingimento E
-                            Beneficiamento De
+                    <li><a href="#"><i class="fa-solid fa-angles-right"></i> Máquinas Para Tingimento E Beneficiamento
+                            De
                             Malhas E Tecidos</a></li>
-                    <li></i><a href="#"><i class="fa-solid fa-angles-right"></i> Máquinas Para Trituração E
-                            Reciclagem De
+                    <li></i><a href="#"><i class="fa-solid fa-angles-right"></i> Máquinas Para Trituração E Reciclagem
+                            De
                             Resíduos Sólidos</a></li>
                     <li><a href="#"><i class="fa-solid fa-angles-right"></i> Estruturas Metálicas Prediais</a></li>
                     <li><a href="#"><i class="fa-solid fa-angles-right"></i> Sistemas De Movimentação E Transporte De
@@ -123,21 +156,17 @@
             <div class="categ2">
                 <ul>
                     <li><a href="#"><i class="fa-solid fa-angles-right"></i> Gruas Para A Construção Civil</a></li>
-                    <li><a href="#"><i class="fa-solid fa-angles-right"></i> Máquinas E Componentes Hidráulicos De
-                            Alto
+                    <li><a href="#"><i class="fa-solid fa-angles-right"></i> Máquinas E Componentes Hidráulicos De Alto
                             Desempenho</a></li>
                     <li><a href="#"><i class="fa-solid fa-angles-right"></i>Tanques E Reservatórios Em Aço
                             Inoxidável</a></li>
                     <li><a href="#"><i class="fa-solid fa-angles-right"></i> Filtros De Alta Performance Para Gases
                             Tóxicos</a></li>
-                    <li><a href="#"><i class="fa-solid fa-angles-right"></i> Rosca Desaguadora Para A Indústria De
-                            Papel
+                    <li><a href="#"><i class="fa-solid fa-angles-right"></i> Rosca Desaguadora Para A Indústria De Papel
                             E Celulose</a></li>
-                    <li><a href="#"><i class="fa-solid fa-angles-right"></i> Silos Para Armazenamento De
-                            Materiais</a>
+                    <li><a href="#"><i class="fa-solid fa-angles-right"></i> Silos Para Armazenamento De Materiais</a>
                     </li>
-                    <li><a href="#"><i class="fa-solid fa-angles-right"></i> Usinas Para Geração De Biogás E
-                            Energia</a>
+                    <li><a href="#"><i class="fa-solid fa-angles-right"></i> Usinas Para Geração De Biogás E Energia</a>
                     </li>
                 </ul>
             </div>
@@ -147,13 +176,11 @@
                             Cordas, Cintas E Correntes</a></li>
                     <li><a href="#"><i class="fa-solid fa-angles-right"></i> Plataforma Elevatória Para Trabalho Em
                             Altura</a></li>
-                    <li><a href="#"><i class="fa-solid fa-angles-right"></i> Trocadores De Calor Em Aço
-                            Inoxidável</a>
+                    <li><a href="#"><i class="fa-solid fa-angles-right"></i> Trocadores De Calor Em Aço Inoxidável</a>
                     </li>
                     <li><a href="#"><i class="fa-solid fa-angles-right"></i> Redes De Tubulações Industriais</a></li>
                     <li><a href="#"><i class="fa-solid fa-angles-right"></i> Tubos Aletados E Serpentinas</a></li>
-                    <li><a href="#"><i class="fa-solid fa-angles-right"></i> Ventiladores E Exaustores
-                            Industriais</a>
+                    <li><a href="#"><i class="fa-solid fa-angles-right"></i> Ventiladores E Exaustores Industriais</a>
                     </li>
                     <li><a href="#"><i class="fa-solid fa-angles-right"></i> Máquinas E Equipamentos Customizados
                             Conforme Demanda E Necessidade Do Cliente</a></li>
@@ -259,7 +286,7 @@
         </span>
     </footer>
     <!-- Footer End -->
-
+    <script src="https://kit.fontawesome.com/a2d1e293d2.js" crossorigin="anonymous"></script>
 </body>
 <script src="script.js"></script>
 
