@@ -15,9 +15,8 @@
             equipamentos, bem como infraestrutura e manutenção de
             infraestrutura. Eles trabalham em Guarulhos, cidade localizada no
             estado de São Paulo.">
-    <link href="style.css" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
     <link rel="shortcut icon" href="/assets/imagens/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="blog.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -70,23 +69,9 @@
                 <i id="midia" class="fa-brands fa-linkedin"></i>
             </a>
         </div>
-        <button id="btn-open">
-            <i class="fa-solid fa-bars"></i>
-        </button>
+        <!-- Creating a menu modal. -->
 
-        <button id="btn-close">
-            <i class="fa-solid fa-xmark"></i>
-        </button>
-    </header>
-    <nav>
-
-        <div class="menuFixo">
-            <a href="">
-                <img src="/assets/imagens/bg.png" alt="Logo">
-            </a>
-            <h1 style="font-family:Raleway-Regular;">Wing Man Industrial</h1>
-        </div>
-        <div #menumodal>
+        <aside class="sideBar">
             <ul class="menuModal">
                 <li>
                     <a href="/index.html">HOME</a>
@@ -104,11 +89,20 @@
                     <a href="/contato.html">CONTATO</a>
                 </li>
             </ul>
-        </div>
+            <!-- Creating a button with the id of btn-open. -->
 
-        </div>
-    </nav>
-    </section>
+            <button id="btn-open">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <!-- Creating a button with an id of btn-close and an icon of an xmark. -->
+
+            <button id="btn-close">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </aside>
+
+    </header>
 
     <!-- BLOG Start -->
     <main class="blog">
@@ -128,44 +122,44 @@
                 <p style="text-align:justify;">Assim como a mineração, a construção civil também enfrenta circunstâncias
                     que a fazem recorrer a soluções customizadas. A localização de um fosso de elevador...</p>
             </div>
-            
+
             <<div class="post3"><img src="/assets/imagens/calderiablog.jpg" alt="Caldeiras a vapor">
                 <h3>MONTAGEM DE CALDEIRA</h3>
                 <p>28/03/2022
                 </p>
                 <p style="text-align:justify;">A Condução da fase inicial de montagem da caldeira de recuperação com
                     produção de vapor superaquecido na vazão de 15.000...</p>
-            </div>
-            <div class="post3"><img src="/assets/imagens/embreve.jpg" alt="Caldeiras a vapor">
-                <h3>Em Breve</h3>
-               
-                
-            </div>
-            <div class="post3"><img src="/assets/imagens/embreve.jpg" alt="Caldeiras a vapor">
-                <h3>Em Breve</h3>
-               
-                
-            </div>
-            <div class="post3"><img src="/assets/imagens/embreve.jpg" alt="Caldeiras a vapor">
-                <h3>Em Breve</h3>
-               
-                
-            </div>
-            <div class="post3"><img src="/assets/imagens/embreve.jpg" alt="Caldeiras a vapor">
-                <h3>Em Breve</h3>
-               
-                
-            </div>
-            <div class="post3"><img src="/assets/imagens/embreve.jpg" alt="Caldeiras a vapor">
-                <h3>Em Breve</h3>
-               
-                
-            </div>
-            <div class="post3"><img src="/assets/imagens/embreve.jpg" alt="Caldeiras a vapor">
-                <h3>Em Breve</h3>
-               
-                
-            </div>
+        </div>
+        <div class="post3"><img src="/assets/imagens/embreve.jpg" alt="Caldeiras a vapor">
+            <h3>Em Breve</h3>
+
+
+        </div>
+        <div class="post3"><img src="/assets/imagens/embreve.jpg" alt="Caldeiras a vapor">
+            <h3>Em Breve</h3>
+
+
+        </div>
+        <div class="post3"><img src="/assets/imagens/embreve.jpg" alt="Caldeiras a vapor">
+            <h3>Em Breve</h3>
+
+
+        </div>
+        <div class="post3"><img src="/assets/imagens/embreve.jpg" alt="Caldeiras a vapor">
+            <h3>Em Breve</h3>
+
+
+        </div>
+        <div class="post3"><img src="/assets/imagens/embreve.jpg" alt="Caldeiras a vapor">
+            <h3>Em Breve</h3>
+
+
+        </div>
+        <div class="post3"><img src="/assets/imagens/embreve.jpg" alt="Caldeiras a vapor">
+            <h3>Em Breve</h3>
+
+
+        </div>
         </div>
         </div>
     </main>
@@ -176,7 +170,7 @@
         <h1 class="h1footer ">CATEGORIAS</h1>
         <div class="container-categorias">
             <div class="categ1">
-                <ul style="list-style: none ; color: white;">
+                <ul>
                     <li><a href=""><i class="fa-solid fa-angles-right"></i> Caldeiras Para Geração De Vapor E
                             Energia</a></li>
                     <li><a href=""><i class="fa-solid fa-angles-right"></i> Máquinas Para Tingimento E Beneficiamento De
@@ -193,7 +187,7 @@
                 </ul>
             </div>
             <div class="categ2">
-                <ul style="list-style: none ; color: white;">
+                <ul>
                     <li><a href=""><i class="fa-solid fa-angles-right"></i> Gruas Para A Construção Civil</a></li>
                     <li><a href=""><i class="fa-solid fa-angles-right"></i> Máquinas E Componentes Hidráulicos De Alto
                             Desempenho</a></li>
@@ -210,7 +204,7 @@
                 </ul>
             </div>
             <div class="categ3">
-                <ul style="list-style: none ; color: white;">
+                <ul>
                     <li><a href=""><i class="fa-solid fa-angles-right"></i> Máquinas Para Ensaios Em Cabos De Aço,
                             Cordas, Cintas E Correntes</a></li>
                     <li><a href=""><i class="fa-solid fa-angles-right"></i> Plataforma Elevatória Para Trabalho Em
@@ -230,13 +224,13 @@
             <h1 class="h1footer">SERVIÇOS</h1>
             <div class="servicosfooter">
                 <div class="svs1">
-                    <ul style="list-style: none ; color: white;">
+                    <ul>
                         <li><a href=""><i class="fa-solid fa-angles-right"></i> Montagens Industriais</a></li>
                         <li><a href=""><i class="fa-solid fa-angles-right"></i>Inspeção e Laudo de Equipamentos</a></li>
                     </ul>
                 </div>
                 <div class="svs2">
-                    <ul style="list-style: none ; color: white;">
+                    <ul>
                         <li><a href=""><i class="fa-solid fa-angles-right"></i>Balanceamento de Rotores</a></li>
                         <li><a href=""><i class="fa-solid fa-angles-right"></i>Reforma e Manutenção de Máquinas em
                                 Geral</a></li>
@@ -249,7 +243,7 @@
             <h1 class="h1footer">CONTATO</h1>
             <div class="contato">
 
-                <ul style="list-style: none ; color: white;">
+                <ul>
                     <li>
                         <a href="">
                             <h4>
@@ -326,7 +320,7 @@
     <!-- Footer End -->
     <script src="https://kit.fontawesome.com/a2d1e293d2.js" crossorigin="anonymous"></script>
 </body>
-<script src="script.js"></script>
-<script src="carousel.js"></script>
+<script src="/script.js">
 
+</script>
 </html>
