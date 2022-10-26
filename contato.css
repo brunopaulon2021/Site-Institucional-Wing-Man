@@ -112,39 +112,6 @@ header img {
     transform: scale(1.5);
 }
 
-/* Creating a banner that is fixed to the top of the page. */
-
-.banner {
-    font-size: 20px;
-    color: var(--text-color-paragraph);
-    display: flex;
-    margin: 0 auto;
-    padding: 20px;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--text-color-titles);
-}
-
-.banner h1 {
-    font-family: 'Raleway-Regular';
-    padding-left: 20px;
-}
-
-.banner button {
-    width: 15px;
-    height: 15px;
-    cursor: pointer;
-}
-
-.banner img {
-    background-color: #666;
-    width: 150px;
-    border: solid 5px var(--bg-color-titles);
-}
-
-/* The above code is creating a menu that is hidden by default. When the user clicks on the button,
-    the menu will appear. */
-
 .menuModal {
     position: fixed;
     top: 0;
@@ -422,136 +389,59 @@ footer h2 {
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    /* The CSS code for the header. */
-
-    header img {
-        width: 30px;
-    }
-
-    .header {
-        width: 100%;
-        display: flexbox;
-        flex-direction: column;
-    }
-
-    .contato {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .contato a {
-        font-size: medium;
-    }
+@media only screen and (min-width:200px) and (max-width: 800px) {
 
 
-    /* Creating a banner that is fixed to the top of the page. */
-
-    .banner {
-        font-size: small;
-    }
-
-    .banner h1 {
-        font-family: 'Raleway-Regular';
-        padding-left: 20px;
-    }
-
-    .banner img {
-        width: 100px;
-    }
-
-    /* The above code is creating a menu that is hidden by default. When the user clicks on the button,
-    the menu will appear. */
-
-    .menuModal {
-        width: 100%;
-    }
-
-    .menuModal li {
-        justify-content: center;
-        text-align: center;
-        margin: 0 auto;
-    }
-
-    /* Creating a container for the products and the images. */
-
-    .container-produtos {
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 98%;
-        margin: 0 auto;
-        gap: 1%;
+    main {
+        background-color: #14263D;
+        max-width: 100%;
 
     }
 
-    .caldeiras,
-    .gruas,
-    .maquinascabos,
-    .maquinastecidos,
-    .emBreve
-     {
-        width: 98%;
-        text-align: center;
-    }
+.contato {
+    display: block;
+    max-width: 100%;
+}
 
-    .caldeiras a,
-    .gruas a,
-    .maquinascabos a,
-    .maquinastecidos a, 
-    .emBreve a{
+.contato a {
+    font-size: 18px;
+}
+    #form {     
+        max-width: 100%;
+    }
+    h1 {
+        color: #666;
+        font-size: 20px;
+        padding: 24px;
+    }
+    label {
+        color: #666;
         font-size: 20px;
     }
-
-    /* Creating a container for the services section. */
-    .servicos {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .reformas,
-    .laudos,
-    .rotores,
-    .montagens {
-
-        padding-top: 10px;
-        width: 98%;
-    }
-
-    .reformas a,
-    .laudos a,
-    .rotores a,
-    .montagens a {
-        padding-top: 10px;
-    }
-
-
-    /* The CSS code for the "About" section. */
-    .sobre {
+    
+    input {
+        margin: 0 auto;
+        width: 80%;
+        font-size: 20px;
         text-align: center;
-        padding-top: 10px;
-        font-size: 22px;
+    
     }
-
-    /* The above code is creating a blog page with 3 posts. */
-    .container-blog {
-        display: flex;
-        flex-direction: column;
+    textarea{
+        font-size: 20px;
+        margin: 0 auto;
+        width: 80%;
+        resize: vertical;
     }
-
-    .post1,
-    .post2,
-    .post3 {
-        width: 98%;
+    
+    .btn-submit {
+        margin: 20px auto;
+        width: 80%;
     }
-
     /* Settings footer*/
 
     .container-categorias {
-        display: flex;
-        flex-direction: column;
-    }
+        display: block;
+        }
 
     .categ1,
     .categ2,

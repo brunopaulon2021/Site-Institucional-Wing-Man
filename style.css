@@ -553,7 +553,7 @@ footer h2 {
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     /* The CSS code for the header. */
 
     header img {
